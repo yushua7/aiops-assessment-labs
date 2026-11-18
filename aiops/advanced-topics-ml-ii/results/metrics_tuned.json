@@ -1,0 +1,16 @@
+{
+  "test_roc_auc": 0.8653734934184654,
+  "test_pr_auc": 0.299235913111464,
+  "best_val_pr_auc": 0.6194974631543487,
+  "best_params": {
+    "n_estimators": 250,
+    "learning_rate": 0.0010285022663326562,
+    "num_leaves": 26,
+    "min_child_samples": 46,
+    "subsample": 0.9182402312280954,
+    "colsample_bytree": 0.5890743630773815,
+    "reg_lambda": 0.0027335352381469224
+  },
+  "model_version": 1,
+  "n_trials": 30
+}

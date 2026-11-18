@@ -1,0 +1,26 @@
+{
+  "content+metadata": {
+    "pr_auc": 0.9964209395959516,
+    "f1": 0.9757785467128027,
+    "n_features": 341,
+    "top_features": [
+      "Level_FATAL",
+      "tok_data",
+      "tok_program",
+      "tok_ciostream",
+      "tok_rts"
+    ]
+  },
+  "content_only": {
+    "pr_auc": 0.9949656877920003,
+    "f1": 0.9757785467128027,
+    "n_features": 331,
+    "top_features": [
+      "tok_data",
+      "tok_ciostream",
+      "tok_lustre",
+      "tok_reason",
+      "tok_network"
+    ]
+  }
+}

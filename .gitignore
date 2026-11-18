@@ -1,0 +1,6 @@
+.venv/
+data/
+mlflow/
+*.joblib
+*.pt
+__pycache__/

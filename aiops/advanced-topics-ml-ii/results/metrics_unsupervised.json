@@ -1,0 +1,20 @@
+{
+  "autoencoder": {
+    "roc_auc": 0.8832551010703554,
+    "pr_auc": 0.3261615983785679,
+    "threshold": 0.17778190165757962,
+    "detected": true,
+    "fa_episodes": 4,
+    "fa_per_day": 0.21456509592102813,
+    "first_detection": "2014-02-09 12:05:00"
+  },
+  "isolation_forest": {
+    "roc_auc": 0.9905570482293363,
+    "pr_auc": 0.8749071819324565,
+    "threshold": 0.648913549592323,
+    "detected": true,
+    "fa_episodes": 13,
+    "fa_per_day": 0.6973365617433415,
+    "first_detection": "2014-02-07 18:50:00"
+  }
+}
