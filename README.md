@@ -5,5 +5,6 @@ Professional-level hands-on labs completed in the AIOps Additional Assessment La
 | Area | Lab | Status |
 |------|-----|--------|
 | AIOps | [Advanced ML for AIOps: anomaly detection, SHAP, MLflow](aiops/advanced-topics-ml-ii) | Done |
+| AIOps | [AIOps intelligence pipeline: anomaly detection, log mining, NLP, MLOps](aiops/aiops-intelligence-pipeline) | Done |
 | DevOps | Docker, Ansible, Kubernetes | Coming soon |
 | SysOps | RHEL, cloud security | Coming soon |
