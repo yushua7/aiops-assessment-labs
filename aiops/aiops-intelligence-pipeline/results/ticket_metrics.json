@@ -1,0 +1,12 @@
+{
+  "best_params": {
+    "clf__C": 1.0,
+    "tfidf__ngram_range": [
+      1,
+      2
+    ]
+  },
+  "cv_f1_macro": 0.9562,
+  "accuracy": 0.96,
+  "f1_macro": 0.96
+}

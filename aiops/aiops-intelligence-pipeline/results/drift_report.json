@@ -1,0 +1,69 @@
+{
+  "psi": {
+    "cpu": 1.1352,
+    "mem": 0.0033,
+    "latency_ms": 6.7027,
+    "error_rate": 0.008,
+    "req_rate": 1.9996
+  },
+  "details": {
+    "cpu": {
+      "psi": 1.1352,
+      "ks_stat": 0.3808,
+      "ks_pvalue": 1.255640963622652e-266,
+      "status": "SIGNIFICANT"
+    },
+    "mem": {
+      "psi": 0.0033,
+      "ks_stat": 0.026,
+      "ks_pvalue": 0.1210739174179835,
+      "status": "stable"
+    },
+    "latency_ms": {
+      "psi": 6.7027,
+      "ks_stat": 0.8719,
+      "ks_pvalue": 0.0,
+      "status": "SIGNIFICANT"
+    },
+    "error_rate": {
+      "psi": 0.008,
+      "ks_stat": 0.0346,
+      "ks_pvalue": 0.014310746571718467,
+      "status": "stable"
+    },
+    "req_rate": {
+      "psi": 1.9996,
+      "ks_stat": 0.4267,
+      "ks_pvalue": 6.93e-321,
+      "status": "SIGNIFICANT"
+    }
+  },
+  "drifted_features": [
+    "cpu",
+    "latency_ms",
+    "req_rate"
+  ],
+  "old_alert_rate": 0.1382,
+  "new_alert_rate": 0.0472,
+  "v1_day2": {
+    "tp": 55,
+    "fp": 144,
+    "fn": 0,
+    "precision": 0.2764,
+    "recall": 1.0,
+    "f1": 0.4331,
+    "events_detected": 2,
+    "events_total": 2
+  },
+  "v2_day2": {
+    "tp": 34,
+    "fp": 34,
+    "fn": 21,
+    "precision": 0.5,
+    "recall": 0.6182,
+    "f1": 0.5528,
+    "events_detected": 2,
+    "events_total": 2
+  },
+  "fp_fixed": 118
+}

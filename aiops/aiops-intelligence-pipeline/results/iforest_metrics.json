@@ -1,0 +1,12 @@
+{
+  "tp": 62,
+  "fp": 30,
+  "fn": 18,
+  "precision": 0.6739,
+  "recall": 0.775,
+  "f1": 0.7209,
+  "events_detected": 3,
+  "events_total": 3,
+  "threshold": 0.5036951412264645,
+  "budget": 0.03
+}

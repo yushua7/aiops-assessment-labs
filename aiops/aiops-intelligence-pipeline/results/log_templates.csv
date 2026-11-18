@@ -1,0 +1,9 @@
+cluster_id,size,presence_train,template
+1,16099,0.8704,INFO <*> <*> status=<NUM> <*>
+4,8154,0.5993,INFO Scheduled job <*> completed in <NUM> ms
+3,8107,0.5876,DEBUG Cache hit for key product:<NUM>
+2,7960,0.5804,INFO User <*> logged in from <IP>
+6,166,0.0081,WARN GC pause <*> heap_used=<NUM>%
+7,107,0.0057,WARN Slow query detected <*> table=orders
+8,105,0.0082,ERROR Connection to db <IP>:<NUM> failed: timeout after 3000ms
+5,103,0.0065,WARN Thread pool saturated active=<NUM> queued=<NUM>
