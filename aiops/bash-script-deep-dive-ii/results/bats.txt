@@ -1,0 +1,12 @@
+1..11
+ok 1 normalize_logs keeps 1200 valid events and drops malformed lines
+ok 2 aggregate_minutes produces 60 rows with correct incident values
+ok 3 detect_anomalies flags exactly the three incident minutes
+ok 4 detect_anomalies tolerates a flat baseline (sd = 0)
+ok 5 a higher z threshold leaves only the latency rule
+ok 6 alert_key is deterministic and distinguishes minutes
+ok 7 post_with_retry gives up after ALERT_RETRIES attempts
+ok 8 CLI rejects unknown options with exit 64
+ok 9 CLI dry run exits 2 and prints a JSON array of 3 anomalies
+ok 10 CLI fails with exit 1 for an unreadable file
+ok 11 CLI tsv output has a header and three data rows

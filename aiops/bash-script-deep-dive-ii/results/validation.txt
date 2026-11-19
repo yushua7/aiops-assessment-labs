@@ -1,0 +1,18 @@
+PASS  T1 tools installed
+PASS  T1 scripts pass shellcheck
+PASS  T1 config file is loaded
+PASS  T1 unknown option exits 64
+PASS  T2 sample log has 1202 lines
+PASS  T2 sample log has 87 errors
+PASS  T3 detector flags 3 minutes (exit 2)
+PASS  T3 z-score of 10:30 is 4.36
+PASS  T4 journal source works
+PASS  T4 docker source works
+PASS  T5 webhook healthy
+PASS  T5 webhook received >= 3 alerts
+PASS  T5 alerts recorded in journal
+PASS  T6 bats suite passes
+PASS  T7 timer is active
+PASS  T7 last service run succeeded
+
+16 passed, 0 failed
