@@ -1,4 +1,4 @@
-# AIOps Intelligence Pipeline: Anomaly Detection, Log Mining, Incident NLP and Model Operations
+# Artificial Intelligence II: Anomaly Detection, Log Mining, Incident NLP and Model Operations
 
 Hands-on lab from the AIOps Additional Assessment Labs at Al Nafi.
 
