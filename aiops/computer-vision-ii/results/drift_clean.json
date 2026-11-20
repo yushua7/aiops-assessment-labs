@@ -1,0 +1,9 @@
+{
+  "images": "datasets/rackvision/images/test",
+  "n": 60,
+  "ref_mean": 53.65,
+  "ref_std": 10.4,
+  "batch_mean": 54.2,
+  "outlier_fraction": 0.0,
+  "drift": false
+}

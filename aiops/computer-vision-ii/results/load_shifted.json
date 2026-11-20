@@ -1,0 +1,11 @@
+{
+  "requests": 120,
+  "errors": 0,
+  "throughput_rps": 18.4,
+  "client_p50_ms": 212.6,
+  "client_p95_ms": 307.5,
+  "server_infer_mean_ms": 157.4,
+  "detections_per_image": 3.6,
+  "mean_confidence": 0.685,
+  "empty_rate": 0.0
+}
