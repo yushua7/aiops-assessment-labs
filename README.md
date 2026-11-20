@@ -10,5 +10,6 @@ Professional-level hands-on labs completed in the AIOps Additional Assessment La
 | AIOps | [Cloud Security Standards Review II: CIS, NIST and CCM control matrix](aiops/cloud-security-standards-review-ii) | Done |
 | AIOps | [Computer Vision II: YOLOv8 detector, ONNX service, drift monitoring](aiops/computer-vision-ii) | Done |
 | AIOps | [Deep Learning II: LSTM, GRU, autoencoder, DeepLog, Transformer, ONNX service](aiops/deep-learning-ii) | Done |
+| AIOps | [Deep Learning, Open Source Perspective: PyTorch to ONNX to MLflow to container](aiops/deep-learning-open-source-perspective) | Done |
 | DevOps | Docker, Ansible, Kubernetes | Coming soon |
 | SysOps | RHEL, cloud security | Coming soon |
