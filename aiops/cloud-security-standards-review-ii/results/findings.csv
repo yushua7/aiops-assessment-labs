@@ -1,0 +1,533 @@
+source,layer,id,title,severity,status,theme
+openscap,host,package_prelink_removed,"Package ""prelink"" Must not be Installed",medium,PASS,secure-configuration
+openscap,host,package_aide_installed,Install AIDE,medium,FAIL,secure-configuration
+openscap,host,aide_build_database,Build and Test AIDE Database,medium,FAIL,secure-configuration
+openscap,host,aide_check_audit_tools,Configure AIDE to Verify the Audit Tools,medium,FAIL,logging-monitoring
+openscap,host,aide_periodic_cron_checking,Configure Periodic Execution of AIDE,medium,FAIL,secure-configuration
+openscap,host,partition_for_tmp,Ensure /tmp Located On Separate Partition,low,FAIL,secure-configuration
+openscap,host,dconf_gnome_disable_user_list,Disable the GNOME3 Login User List,medium,PASS,logging-monitoring
+openscap,host,gnome_gdm_disable_xdmcp,Disable XDMCP in GDM,high,FAIL,unmapped
+openscap,host,dconf_gnome_disable_automount,Disable GNOME3 Automounting,medium,PASS,secrets-management
+openscap,host,dconf_gnome_disable_automount_open,Disable GNOME3 Automount Opening,medium,PASS,secrets-management
+openscap,host,dconf_gnome_disable_autorun,Disable GNOME3 Automount running,low,PASS,secrets-management
+openscap,host,dconf_gnome_screensaver_lock_delay,Set GNOME3 Screensaver Lock Delay After Activation Period,medium,PASS,unmapped
+openscap,host,dconf_gnome_screensaver_lock_enabled,Enable GNOME3 Screensaver Lock After Idle Period,medium,PASS,unmapped
+openscap,host,package_sudo_installed,Install sudo Package,medium,PASS,privileged-access
+openscap,host,sudo_add_use_pty,Ensure Only Users Logged In To Real tty Can Execute Sudo - sudo use_pty,medium,PASS,privileged-access
+openscap,host,sudo_custom_logfile,Ensure Sudo Logfile Exists - sudo logfile,low,FAIL,privileged-access
+openscap,host,sudo_remove_no_authenticate,Ensure Users Re-Authenticate for Privilege Escalation - sudo !authenticate,medium,PASS,privileged-access
+openscap,host,sudo_require_reauthentication,Require Re-Authentication When Using the sudo Command,medium,FAIL,privileged-access
+openscap,host,banner_etc_issue,Modify the System Login Banner,medium,FAIL,logging-monitoring
+openscap,host,banner_etc_issue_net,Modify the System Login Banner for Remote Connections,medium,FAIL,logging-monitoring
+openscap,host,banner_etc_motd,Modify the System Message of the Day Banner,medium,PASS,secure-configuration
+openscap,host,file_groupowner_etc_issue,Verify Group Ownership of System Login Banner,medium,PASS,logging-monitoring
+openscap,host,file_groupowner_etc_issue_net,Verify Group Ownership of System Login Banner for Remote Connections,medium,PASS,logging-monitoring
+openscap,host,file_groupowner_etc_motd,Verify Group Ownership of Message of the Day Banner,medium,PASS,secure-configuration
+openscap,host,file_owner_etc_issue,Verify ownership of System Login Banner,medium,PASS,logging-monitoring
+openscap,host,file_owner_etc_issue_net,Verify ownership of System Login Banner for Remote Connections,medium,PASS,logging-monitoring
+openscap,host,file_owner_etc_motd,Verify ownership of Message of the Day Banner,medium,PASS,secure-configuration
+openscap,host,file_permissions_etc_issue,Verify permissions on System Login Banner,medium,PASS,logging-monitoring
+openscap,host,file_permissions_etc_issue_net,Verify permissions on System Login Banner for Remote Connections,medium,PASS,logging-monitoring
+openscap,host,file_permissions_etc_motd,Verify permissions on Message of the Day Banner,medium,PASS,secure-configuration
+openscap,host,dconf_gnome_banner_enabled,Enable GNOME3 Login Warning Banner,medium,PASS,logging-monitoring
+openscap,host,dconf_gnome_login_banner_text,Set the GNOME3 Login Warning Banner Text,medium,FAIL,logging-monitoring
+openscap,host,accounts_password_pam_unix_remember,Limit Password Reuse,medium,FAIL,secrets-management
+openscap,host,accounts_passwords_pam_faillock_deny,Lock Accounts After Failed Password Attempts,medium,FAIL,secrets-management
+openscap,host,accounts_passwords_pam_faillock_interval,Set Interval For Counting Failed Password Attempts,medium,FAIL,secrets-management
+openscap,host,accounts_passwords_pam_faillock_unlock_time,Set Lockout Time for Failed Password Attempts,medium,FAIL,secrets-management
+openscap,host,accounts_password_pam_dcredit,Ensure PAM Enforces Password Requirements - Minimum Digit Characters,medium,FAIL,secrets-management
+openscap,host,accounts_password_pam_lcredit,Ensure PAM Enforces Password Requirements - Minimum Lowercase Characters,medium,FAIL,secrets-management
+openscap,host,accounts_password_pam_minclass,Ensure PAM Enforces Password Requirements - Minimum Different Categories,medium,FAIL,secrets-management
+openscap,host,accounts_password_pam_minlen,Ensure PAM Enforces Password Requirements - Minimum Length,medium,FAIL,secrets-management
+openscap,host,accounts_password_pam_ocredit,Ensure PAM Enforces Password Requirements - Minimum Special Characters,medium,FAIL,secrets-management
+openscap,host,accounts_password_pam_retry,Ensure PAM Enforces Password Requirements - Authentication Retry Prompts Permitted Per-Session,medium,PASS,secrets-management
+openscap,host,accounts_password_pam_ucredit,Ensure PAM Enforces Password Requirements - Minimum Uppercase Characters,medium,FAIL,secrets-management
+openscap,host,set_password_hashing_algorithm_logindefs,Set Password Hashing Algorithm in /etc/login.defs,medium,FAIL,secrets-management
+openscap,host,account_unique_id,Ensure All Accounts on the System Have Unique User IDs,medium,PASS,unmapped
+openscap,host,group_unique_id,Ensure All Groups on the System Have Unique Group ID,medium,PASS,unmapped
+openscap,host,group_unique_name,Ensure All Groups on the System Have Unique Group Names,medium,PASS,unmapped
+openscap,host,account_disable_post_pw_expiration,Set Account Expiration Following Inactivity,medium,FAIL,unmapped
+openscap,host,account_unique_name,Ensure All Accounts on the System Have Unique Names,medium,PASS,unmapped
+openscap,host,ensure_shadow_group_empty,Ensure shadow Group is Empty,medium,PASS,unmapped
+openscap,host,accounts_maximum_age_login_defs,Set Password Maximum Age,medium,FAIL,secrets-management
+openscap,host,accounts_minimum_age_login_defs,Set Password Minimum Age,medium,FAIL,secrets-management
+openscap,host,accounts_password_set_max_life_existing,Set Existing Passwords Maximum Age,medium,FAIL,secrets-management
+openscap,host,accounts_password_set_min_life_existing,Set Existing Passwords Minimum Age,medium,FAIL,secrets-management
+openscap,host,accounts_password_warn_age_login_defs,Set Password Warning Age,medium,PASS,secrets-management
+openscap,host,accounts_password_all_shadowed,Verify All Account Password Hashes are Shadowed,medium,PASS,secrets-management
+openscap,host,accounts_password_last_change_is_in_past,Ensure all users last password change date is in the past,medium,PASS,secrets-management
+openscap,host,gid_passwd_group_same,All GIDs referenced in /etc/passwd must be defined in /etc/group,low,PASS,unmapped
+openscap,host,no_empty_passwords_etc_shadow,Ensure There Are No Accounts With Blank or Null Passwords,high,PASS,secrets-management
+openscap,host,no_forward_files,Verify No .forward Files Exist,medium,PASS,unmapped
+openscap,host,no_netrc_files,Verify No netrc Files Exist,medium,PASS,unmapped
+openscap,host,accounts_no_uid_except_zero,Verify Only Root Has UID 0,high,PASS,privileged-access
+openscap,host,accounts_root_gid_zero,Verify Root Has A Primary GID 0,high,PASS,privileged-access
+openscap,host,ensure_pam_wheel_group_empty,Ensure the Group Used by pam_wheel.so Module Exists on System and is Empty,medium,FAIL,unmapped
+openscap,host,ensure_root_password_configured,Ensure Authentication Required for Single User Mode,medium,FAIL,secrets-management
+openscap,host,no_shelllogin_for_systemaccounts,Ensure that System Accounts Do Not Run a Shell Upon Login,medium,PASS,logging-monitoring
+openscap,host,use_pam_wheel_group_for_su,Enforce Usage of pam_wheel with Group Parameter for su Authentication,medium,FAIL,unmapped
+openscap,host,accounts_tmout,Set Interactive Session Timeout,medium,FAIL,unmapped
+openscap,host,accounts_user_dot_group_ownership,User Initialization Files Must Be Group-Owned By The Primary Group,medium,PASS,secure-configuration
+openscap,host,accounts_user_dot_no_world_writable_programs,User Initialization Files Must Not Run World-Writable Programs,medium,PASS,unmapped
+openscap,host,accounts_user_dot_user_ownership,User Initialization Files Must Be Owned By the Primary User,medium,PASS,secure-configuration
+openscap,host,accounts_user_interactive_home_directory_exists,All Interactive Users Home Directories Must Exist,medium,PASS,unmapped
+openscap,host,file_groupownership_home_directories,All Interactive User Home Directories Must Be Group-Owned By The Primary Group,medium,PASS,secure-configuration
+openscap,host,file_ownership_home_directories,All Interactive User Home Directories Must Be Owned By The Primary User,medium,PASS,secure-configuration
+openscap,host,file_permissions_home_directories,All Interactive User Home Directories Must Have mode 0750 Or Less Permissive,medium,PASS,secure-configuration
+openscap,host,accounts_root_path_dirs_no_write,Ensure that Root's Path Does Not Include World or Group-Writable Directories,medium,PASS,privileged-access
+openscap,host,root_path_no_dot,Ensure that Root's Path Does Not Include Relative Paths or Null Directories,unknown,PASS,privileged-access
+openscap,host,accounts_umask_etc_bashrc,Ensure the Default Bash Umask is Set Correctly,medium,FAIL,secure-configuration
+openscap,host,accounts_umask_etc_login_defs,Ensure the Default Umask is Set Correctly in login.defs,medium,FAIL,logging-monitoring
+openscap,host,accounts_umask_etc_profile,Ensure the Default Umask is Set Correctly in /etc/profile,medium,FAIL,secure-configuration
+openscap,host,accounts_umask_interactive_users,Ensure the Default Umask is Set Correctly For Interactive Users,medium,PASS,secure-configuration
+openscap,host,package_apparmor_installed,Ensure AppArmor is installed,medium,PASS,secure-configuration
+openscap,host,grub2_enable_apparmor,Ensure AppArmor is enabled in the bootloader configuration,medium,FAIL,secure-configuration
+openscap,host,grub2_uefi_password,Set the UEFI Boot Loader Password,high,FAIL,secrets-management
+openscap,host,package_rsyslog_installed,Ensure rsyslog is Installed,medium,PASS,logging-monitoring
+openscap,host,service_rsyslog_enabled,Enable rsyslog Service,medium,PASS,logging-monitoring
+openscap,host,rsyslog_filecreatemode,Ensure rsyslog Default File Permissions Configured,medium,PASS,logging-monitoring
+openscap,host,package_systemd-journal-remote_installed,Install systemd-journal-remote Package,medium,FAIL,secure-configuration
+openscap,host,service_systemd-journald_enabled,Enable systemd-journald Service,medium,PASS,logging-monitoring
+openscap,host,journald_compress,Ensure journald is configured to compress large log files,medium,FAIL,logging-monitoring
+openscap,host,journald_storage,Ensure journald is configured to write log files to persistent disk,medium,FAIL,logging-monitoring
+openscap,host,socket_systemd-journal-remote_disabled,Disable systemd-journal-remote Socket,medium,PASS,unmapped
+openscap,host,rsyslog_nolisten,Ensure rsyslog Does Not Accept Remote Messages Unless Acting As Log Server,medium,PASS,logging-monitoring
+openscap,host,rsyslog_remote_loghost,Ensure Logs Sent To Remote Host,medium,FAIL,logging-monitoring
+openscap,host,package_iptables_installed,Install iptables Package,medium,PASS,secure-configuration
+openscap,host,package_iptables-persistent_removed,Remove iptables-persistent Package,medium,PASS,secure-configuration
+openscap,host,sysctl_net_ipv6_conf_all_accept_ra,Configure Accepting Router Advertisements on All IPv6 Interfaces,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv6_conf_all_accept_redirects,Disable Accepting ICMP Redirects for All IPv6 Interfaces,medium,PASS,network-exposure
+openscap,host,sysctl_net_ipv6_conf_all_accept_source_route,Disable Kernel Parameter for Accepting Source-Routed Packets on all IPv6 Interfaces,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv6_conf_all_forwarding,Disable Kernel Parameter for IPv6 Forwarding,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv6_conf_default_accept_ra,Disable Accepting Router Advertisements on all IPv6 Interfaces by Default,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv6_conf_default_accept_redirects,Disable Kernel Parameter for Accepting ICMP Redirects by Default on IPv6 Interfaces,medium,PASS,network-exposure
+openscap,host,sysctl_net_ipv6_conf_default_accept_source_route,Disable Kernel Parameter for Accepting Source-Routed Packets on IPv6 Interfaces by Default,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv4_conf_all_accept_redirects,Disable Accepting ICMP Redirects for All IPv4 Interfaces,medium,PASS,network-exposure
+openscap,host,sysctl_net_ipv4_conf_all_accept_source_route,Disable Kernel Parameter for Accepting Source-Routed Packets on all IPv4 Interfaces,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv4_conf_all_log_martians,Enable Kernel Parameter to Log Martian Packets on all IPv4 Interfaces,unknown,PASS,logging-monitoring
+openscap,host,sysctl_net_ipv4_conf_all_rp_filter,Enable Kernel Parameter to Use Reverse Path Filtering on all IPv4 Interfaces,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv4_conf_all_secure_redirects,Disable Kernel Parameter for Accepting Secure ICMP Redirects on all IPv4 Interfaces,medium,FAIL,network-exposure
+openscap,host,sysctl_net_ipv4_conf_default_accept_redirects,Disable Kernel Parameter for Accepting ICMP Redirects by Default on IPv4 Interfaces,medium,PASS,network-exposure
+openscap,host,sysctl_net_ipv4_conf_default_accept_source_route,Disable Kernel Parameter for Accepting Source-Routed Packets on IPv4 Interfaces by Default,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv4_conf_default_log_martians,Enable Kernel Paremeter to Log Martian Packets on all IPv4 Interfaces by Default,unknown,PASS,logging-monitoring
+openscap,host,sysctl_net_ipv4_conf_default_rp_filter,Enable Kernel Parameter to Use Reverse Path Filtering on all IPv4 Interfaces by Default,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv4_conf_default_secure_redirects,Configure Kernel Parameter for Accepting Secure Redirects By Default,medium,FAIL,network-exposure
+openscap,host,sysctl_net_ipv4_icmp_echo_ignore_broadcasts,Enable Kernel Parameter to Ignore ICMP Broadcast Echo Requests on IPv4 Interfaces,medium,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv4_icmp_ignore_bogus_error_responses,Enable Kernel Parameter to Ignore Bogus ICMP Error Responses on IPv4 Interfaces,unknown,FAIL,secure-configuration
+openscap,host,sysctl_net_ipv4_tcp_syncookies,Enable Kernel Parameter to Use TCP Syncookies on Network Interfaces,medium,FAIL,network-exposure
+openscap,host,sysctl_net_ipv4_conf_all_send_redirects,Disable Kernel Parameter for Sending ICMP Redirects on all IPv4 Interfaces,medium,PASS,network-exposure
+openscap,host,sysctl_net_ipv4_conf_default_send_redirects,Disable Kernel Parameter for Sending ICMP Redirects on all IPv4 Interfaces by Default,medium,PASS,network-exposure
+openscap,host,sysctl_net_ipv4_ip_forward,Disable Kernel Parameter for IP Forwarding on IPv4 Interfaces,medium,FAIL,secure-configuration
+openscap,host,package_nftables_installed,Install nftables Package,medium,PASS,secure-configuration
+openscap,host,service_nftables_enabled,Verify nftables Service is Enabled,medium,FAIL,secure-configuration
+openscap,host,nftables_rules_permanent,Ensure nftables Rules are Permanent,medium,FAIL,unmapped
+openscap,host,package_ufw_removed,Remove ufw Package,medium,FAIL,network-exposure
+openscap,host,service_ufw_enabled,Verify ufw Enabled,medium,PASS,network-exposure
+openscap,host,wireless_disable_interfaces,Deactivate Wireless Network Interfaces,medium,PASS,network-exposure
+openscap,host,file_permissions_etc_audit_auditd,Verify Permissions on /etc/audit/auditd.conf,medium,PASS,logging-monitoring
+openscap,host,file_permissions_etc_audit_rulesd,Verify Permissions on /etc/audit/rules.d/*.rules,medium,PASS,logging-monitoring
+openscap,host,file_permissions_unauthorized_world_writable,Ensure No World-Writable Files Exist,medium,PASS,secure-configuration
+openscap,host,file_permissions_ungroupowned,Ensure All Files Are Owned by a Group,medium,PASS,secure-configuration
+openscap,host,no_files_unowned_by_user,Ensure All Files Are Owned by a User,medium,PASS,unmapped
+openscap,host,permissions_local_var_log,Verify permissions of log files,medium,FAIL,logging-monitoring
+openscap,host,file_groupowner_backup_etc_group,Verify Group Who Owns Backup group File,medium,PASS,resilience
+openscap,host,file_groupowner_backup_etc_gshadow,Verify Group Who Owns Backup gshadow File,medium,PASS,resilience
+openscap,host,file_groupowner_backup_etc_passwd,Verify Group Who Owns Backup passwd File,medium,PASS,resilience
+openscap,host,file_groupowner_backup_etc_shadow,Verify User Who Owns Backup shadow File,medium,PASS,resilience
+openscap,host,file_groupowner_etc_group,Verify Group Who Owns group File,medium,PASS,secure-configuration
+openscap,host,file_groupowner_etc_gshadow,Verify Group Who Owns gshadow File,medium,PASS,secure-configuration
+openscap,host,file_groupowner_etc_passwd,Verify Group Who Owns passwd File,medium,PASS,secure-configuration
+openscap,host,file_groupowner_etc_shadow,Verify Group Who Owns shadow File,medium,PASS,secure-configuration
+openscap,host,file_owner_backup_etc_group,Verify User Who Owns Backup group File,medium,PASS,resilience
+openscap,host,file_owner_backup_etc_gshadow,Verify User Who Owns Backup gshadow File,medium,PASS,resilience
+openscap,host,file_owner_backup_etc_passwd,Verify User Who Owns Backup passwd File,medium,PASS,resilience
+openscap,host,file_owner_backup_etc_shadow,Verify Group Who Owns Backup shadow File,medium,PASS,resilience
+openscap,host,file_owner_etc_group,Verify User Who Owns group File,medium,PASS,secure-configuration
+openscap,host,file_owner_etc_gshadow,Verify User Who Owns gshadow File,medium,PASS,secure-configuration
+openscap,host,file_owner_etc_passwd,Verify User Who Owns passwd File,medium,PASS,secure-configuration
+openscap,host,file_owner_etc_shadow,Verify User Who Owns shadow File,medium,PASS,secure-configuration
+openscap,host,file_permissions_backup_etc_group,Verify Permissions on Backup group File,medium,PASS,resilience
+openscap,host,file_permissions_backup_etc_gshadow,Verify Permissions on Backup gshadow File,medium,PASS,resilience
+openscap,host,file_permissions_backup_etc_passwd,Verify Permissions on Backup passwd File,medium,PASS,resilience
+openscap,host,file_permissions_backup_etc_shadow,Verify Permissions on Backup shadow File,medium,PASS,resilience
+openscap,host,file_permissions_etc_group,Verify Permissions on group File,medium,PASS,secure-configuration
+openscap,host,file_permissions_etc_gshadow,Verify Permissions on gshadow File,medium,PASS,secure-configuration
+openscap,host,file_permissions_etc_passwd,Verify Permissions on passwd File,medium,PASS,secure-configuration
+openscap,host,file_permissions_etc_shadow,Verify Permissions on shadow File,medium,PASS,secure-configuration
+openscap,host,file_groupownership_audit_binaries,Verify that audit tools are owned by group root,medium,PASS,privileged-access
+openscap,host,file_ownership_audit_binaries,Verify that audit tools are owned by root,medium,PASS,privileged-access
+openscap,host,file_permissions_audit_binaries,Verify that audit tools Have Mode 0755 or less,medium,PASS,logging-monitoring
+openscap,host,kernel_module_cramfs_disabled,Disable Mounting of cramfs,low,FAIL,secure-configuration
+openscap,host,kernel_module_usb-storage_disabled,Disable Modprobe Loading of USB Storage Driver,medium,FAIL,secure-configuration
+openscap,host,mount_option_dev_shm_nodev,Add nodev Option to /dev/shm,medium,FAIL,secure-configuration
+openscap,host,mount_option_dev_shm_noexec,Add noexec Option to /dev/shm,medium,FAIL,secure-configuration
+openscap,host,mount_option_dev_shm_nosuid,Add nosuid Option to /dev/shm,medium,FAIL,secure-configuration
+openscap,host,disable_users_coredumps,Disable Core Dumps for All Users,medium,FAIL,secure-configuration
+openscap,host,sysctl_fs_suid_dumpable,Disable Core Dumps for SUID programs,medium,FAIL,secure-configuration
+openscap,host,sysctl_kernel_randomize_va_space,Enable Randomized Layout of Virtual Address Space,medium,FAIL,secure-configuration
+openscap,host,service_apport_disabled,Disable Apport Service,unknown,FAIL,secure-configuration
+openscap,host,package_avahi_removed,Uninstall avahi Server Package,medium,FAIL,secure-configuration
+openscap,host,service_avahi-daemon_disabled,Disable Avahi Server Software,medium,FAIL,secure-configuration
+openscap,host,service_cron_enabled,Enable cron Service,medium,PASS,secure-configuration
+openscap,host,file_groupowner_cron_d,Verify Group Who Owns cron.d,medium,PASS,secure-configuration
+openscap,host,file_groupowner_cron_daily,Verify Group Who Owns cron.daily,medium,PASS,secure-configuration
+openscap,host,file_groupowner_cron_hourly,Verify Group Who Owns cron.hourly,medium,PASS,secure-configuration
+openscap,host,file_groupowner_cron_monthly,Verify Group Who Owns cron.monthly,medium,PASS,secure-configuration
+openscap,host,file_groupowner_cron_weekly,Verify Group Who Owns cron.weekly,medium,PASS,secure-configuration
+openscap,host,file_groupowner_crontab,Verify Group Who Owns Crontab,medium,PASS,secure-configuration
+openscap,host,file_owner_cron_d,Verify Owner on cron.d,medium,PASS,secure-configuration
+openscap,host,file_owner_cron_daily,Verify Owner on cron.daily,medium,PASS,secure-configuration
+openscap,host,file_owner_cron_hourly,Verify Owner on cron.hourly,medium,PASS,secure-configuration
+openscap,host,file_owner_cron_monthly,Verify Owner on cron.monthly,medium,PASS,secure-configuration
+openscap,host,file_owner_cron_weekly,Verify Owner on cron.weekly,medium,PASS,secure-configuration
+openscap,host,file_owner_crontab,Verify Owner on crontab,medium,PASS,secure-configuration
+openscap,host,file_permissions_cron_d,Verify Permissions on cron.d,medium,FAIL,secure-configuration
+openscap,host,file_permissions_cron_daily,Verify Permissions on cron.daily,medium,FAIL,secure-configuration
+openscap,host,file_permissions_cron_hourly,Verify Permissions on cron.hourly,medium,FAIL,secure-configuration
+openscap,host,file_permissions_cron_monthly,Verify Permissions on cron.monthly,medium,FAIL,secure-configuration
+openscap,host,file_permissions_cron_weekly,Verify Permissions on cron.weekly,medium,FAIL,secure-configuration
+openscap,host,file_permissions_crontab,Verify Permissions on crontab,medium,FAIL,secure-configuration
+openscap,host,file_at_deny_not_exist,Ensure that /etc/at.deny does not exist,medium,FAIL,unmapped
+openscap,host,file_cron_deny_not_exist,Ensure that /etc/cron.deny does not exist,medium,PASS,secure-configuration
+openscap,host,file_groupowner_at_allow,Verify Group Who Owns /etc/at.allow file,medium,PASS,secure-configuration
+openscap,host,file_groupowner_cron_allow,Verify Group Who Owns /etc/cron.allow file,medium,PASS,secure-configuration
+openscap,host,file_owner_at_allow,Verify User Who Owns /etc/at.allow file,medium,PASS,secure-configuration
+openscap,host,file_owner_cron_allow,Verify User Who Owns /etc/cron.allow file,medium,PASS,secure-configuration
+openscap,host,file_permissions_at_allow,Verify Permissions on /etc/at.allow file,medium,PASS,secure-configuration
+openscap,host,file_permissions_cron_allow,Verify Permissions on /etc/cron.allow file,medium,PASS,secure-configuration
+openscap,host,package_nis_removed,Uninstall the nis package,low,PASS,secure-configuration
+openscap,host,package_dhcp_removed,Uninstall DHCP Server Package,medium,PASS,secure-configuration
+openscap,host,package_bind_removed,Uninstall bind Package,low,PASS,secure-configuration
+openscap,host,package_vsftpd_removed,Uninstall vsftpd Package,high,PASS,secure-configuration
+openscap,host,package_httpd_removed,Uninstall httpd Package,unknown,PASS,secure-configuration
+openscap,host,package_nginx_removed,Uninstall nginx Package,unknown,PASS,secure-configuration
+openscap,host,package_cyrus-imapd_removed,Uninstall cyrus-imapd Package,unknown,PASS,secure-configuration
+openscap,host,package_dovecot_removed,Uninstall dovecot Package,unknown,PASS,secure-configuration
+openscap,host,package_openldap-clients_removed,Ensure LDAP client is not installed,low,FAIL,secure-configuration
+openscap,host,package_openldap-servers_removed,Uninstall openldap-servers Package,low,PASS,secure-configuration
+openscap,host,has_nonlocal_mta,Ensure Mail Transfer Agent is not Listening on any non-loopback Address,medium,PASS,unmapped
+openscap,host,package_nfs-kernel-server_removed,Uninstall nfs-kernel-server Package,low,PASS,secure-configuration
+openscap,host,package_rpcbind_removed,Uninstall rpcbind Package,low,PASS,secure-configuration
+openscap,host,package_timesyncd_installed,Install the systemd_timesyncd Service,high,FAIL,secure-configuration
+openscap,host,service_chronyd_enabled,The Chronyd service is enabled,medium,PASS,secure-configuration
+openscap,host,chronyd_run_as_chrony_user,Ensure that chronyd is running under chrony user account,medium,PASS,secure-configuration
+openscap,host,package_rsync_removed,Uninstall rsync Package,medium,FAIL,secure-configuration
+openscap,host,package_rsh_removed,Uninstall rsh Package,unknown,PASS,secure-configuration
+openscap,host,package_talk_removed,Uninstall talk Package,medium,PASS,secure-configuration
+openscap,host,package_telnet_removed,Remove telnet Clients,low,FAIL,secure-configuration
+openscap,host,package_cups_removed,Uninstall CUPS Package,unknown,FAIL,secure-configuration
+openscap,host,service_cups_disabled,Disable the CUPS Service,unknown,FAIL,secure-configuration
+openscap,host,package_squid_removed,Uninstall squid Package,unknown,PASS,secure-configuration
+openscap,host,package_samba_removed,Uninstall Samba Package,unknown,PASS,secure-configuration
+openscap,host,package_net-snmp_removed,Uninstall net-snmp Package,unknown,PASS,secure-configuration
+openscap,host,file_groupowner_sshd_config,Verify Group Who Owns SSH Server config file,medium,PASS,secure-configuration
+openscap,host,file_owner_sshd_config,Verify Owner on SSH Server config file,medium,PASS,secure-configuration
+openscap,host,file_permissions_sshd_config,Verify Permissions on SSH Server config file,medium,FAIL,secure-configuration
+openscap,host,file_permissions_sshd_private_key,Verify Permissions on SSH Server Private *_key Key Files,medium,PASS,secure-configuration
+openscap,host,file_permissions_sshd_pub_key,Verify Permissions on SSH Server Public *.pub Key Files,medium,PASS,network-exposure
+openscap,host,sshd_set_keepalive,Set SSH Client Alive Count Max,medium,FAIL,secure-configuration
+openscap,host,sshd_set_idle_timeout,Set SSH Client Alive Interval,medium,FAIL,secure-configuration
+openscap,host,disable_host_auth,Disable Host-Based Authentication,medium,FAIL,unmapped
+openscap,host,sshd_disable_empty_passwords,Disable SSH Access via Empty Passwords,high,FAIL,secrets-management
+openscap,host,sshd_disable_rhosts,Disable SSH Support for .rhosts Files,medium,FAIL,secure-configuration
+openscap,host,sshd_disable_root_login,Disable SSH Root Login,medium,PASS,privileged-access
+openscap,host,sshd_do_not_permit_user_env,Do Not Allow SSH Environment Options,medium,FAIL,secure-configuration
+openscap,host,sshd_enable_pam,Enable PAM,medium,PASS,secure-configuration
+openscap,host,sshd_enable_warning_banner_net,Enable SSH Warning Banner,medium,FAIL,secure-configuration
+openscap,host,sshd_limit_user_access,Limit Users' SSH Access,unknown,FAIL,secure-configuration
+openscap,host,sshd_set_login_grace_time,Ensure SSH LoginGraceTime is configured,medium,FAIL,logging-monitoring
+openscap,host,sshd_set_loglevel_info,Set LogLevel to INFO,low,FAIL,logging-monitoring
+openscap,host,sshd_set_max_auth_tries,Set SSH authentication attempt limit,medium,PASS,secure-configuration
+openscap,host,sshd_set_max_sessions,Set SSH MaxSessions limit,medium,FAIL,secure-configuration
+openscap,host,sshd_set_maxstartups,Ensure SSH MaxStartups is configured,medium,FAIL,secure-configuration
+openscap,host,sshd_use_strong_ciphers,Use Only Strong Ciphers,medium,FAIL,secure-configuration
+openscap,host,sshd_use_strong_kex,Use Only Strong Key Exchange algorithms,medium,FAIL,secure-configuration
+openscap,host,sshd_use_strong_macs,Use Only Strong MACs,medium,FAIL,secure-configuration
+openscap,host,package_xorg-x11-server-common_removed,Remove the X Windows Package Group,medium,FAIL,secure-configuration
+lynis,host,LYNIS,This release is more than 4 months old. Check the website or GitHub to see if there is an update available.,low,FAIL,vulnerability-mgmt
+lynis,host,DEB-0280,Install libpam-tmpdir to set $TMP and $TMPDIR for PAM sessions,low,FAIL,unmapped
+lynis,host,DEB-0810,Install apt-listbugs to display a list of critical bugs prior to each APT installation.,low,FAIL,unmapped
+lynis,host,DEB-0811,Install apt-listchanges to display any significant changes prior to any upgrade via APT.,low,FAIL,vulnerability-mgmt
+lynis,host,DEB-0880,Install fail2ban to automatically ban hosts that commit multiple authentication errors.,low,FAIL,unmapped
+lynis,host,BOOT-5122,Set a password on GRUB boot loader to prevent altering boot configuration (e.g. boot in single user mode without password),low,FAIL,secrets-management
+lynis,host,BOOT-5264,Consider hardening system services,low,FAIL,secure-configuration
+lynis,host,KRNL-5820,"If not required, consider explicit disabling of core dump in /etc/security/limits.conf file",low,FAIL,secure-configuration
+lynis,host,AUTH-9230,Configure password hashing rounds in /etc/login.defs,low,FAIL,secrets-management
+lynis,host,AUTH-9282,When possible set expire dates for all password protected accounts,low,FAIL,secrets-management
+lynis,host,AUTH-9286,Configure minimum password age in /etc/login.defs,low,FAIL,secrets-management
+lynis,host,AUTH-9286,Configure maximum password age in /etc/login.defs,low,FAIL,secrets-management
+lynis,host,AUTH-9328,Default umask in /etc/login.defs could be more strict like 027,low,FAIL,logging-monitoring
+lynis,host,FILE-6310,"To decrease the impact of a full /home file system, place /home on a separate partition",low,FAIL,secure-configuration
+lynis,host,FILE-6310,"To decrease the impact of a full /tmp file system, place /tmp on a separate partition",low,FAIL,secure-configuration
+lynis,host,FILE-6310,"To decrease the impact of a full /var file system, place /var on a separate partition",low,FAIL,secure-configuration
+lynis,host,USB-1000,"Disable drivers like USB storage when not used, to prevent unauthorized storage or data theft",low,FAIL,unmapped
+lynis,host,NAME-4404,Add the IP name and FQDN to /etc/hosts for proper name resolving,low,FAIL,unmapped
+lynis,host,PKGS-7370,Install debsums utility for the verification of packages with known good database.,low,FAIL,secure-configuration
+lynis,host,PKGS-7392,Found one or more vulnerable packages.,high,FAIL,vulnerability-mgmt
+lynis,host,PKGS-7392,"Update your system with apt-get update, apt-get upgrade, apt-get dist-upgrade and/or unattended-upgrades",low,FAIL,vulnerability-mgmt
+lynis,host,PKGS-7394,Install package apt-show-versions for patch management purposes,low,FAIL,vulnerability-mgmt
+lynis,host,NETW-3200,Determine if protocol 'dccp' is really needed on this system,low,FAIL,unmapped
+lynis,host,NETW-3200,Determine if protocol 'sctp' is really needed on this system,low,FAIL,unmapped
+lynis,host,NETW-3200,Determine if protocol 'rds' is really needed on this system,low,FAIL,unmapped
+lynis,host,NETW-3200,Determine if protocol 'tipc' is really needed on this system,low,FAIL,unmapped
+lynis,host,FIRE-4513,Check iptables rules to see which rules are currently not used,low,FAIL,unmapped
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,SSH-7408,Consider hardening SSH configuration,low,FAIL,secure-configuration
+lynis,host,LOGG-2154,Enable logging to an external logging host for archiving purposes and additional protection,low,FAIL,logging-monitoring
+lynis,host,LOGG-2190,Check what deleted files are still in use and why.,low,FAIL,logging-monitoring
+lynis,host,BANN-7126,"Add a legal banner to /etc/issue, to warn unauthorized users",low,FAIL,secure-configuration
+lynis,host,BANN-7130,"Add legal banner to /etc/issue.net, to warn unauthorized users",low,FAIL,secure-configuration
+lynis,host,ACCT-9622,Enable process accounting,low,FAIL,unmapped
+lynis,host,ACCT-9626,Enable sysstat to collect accounting (disabled),low,FAIL,unmapped
+lynis,host,ACCT-9628,Enable auditd to collect audit information,low,FAIL,logging-monitoring
+lynis,host,FINT-4350,Install a file integrity tool to monitor changes to critical and sensitive files,low,FAIL,logging-monitoring
+lynis,host,TOOL-5002,Determine if automation tools are present for system management,low,FAIL,unmapped
+lynis,host,FILE-7524,Consider restricting file permissions,low,FAIL,secure-configuration
+lynis,host,KRNL-6000,One or more sysctl values differ from the scan profile and could be tweaked,low,FAIL,secure-configuration
+lynis,host,HRDN-7222,Harden compilers like restricting access to root user only,low,FAIL,privileged-access
+lynis,host,HRDN-7230,"Harden the system by installing at least one malware scanner, to perform periodic file system scans",low,FAIL,unmapped
+docker-bench,container,1.1.1,Ensure a separate partition for containers has been created (Automated),medium,FAIL,secure-configuration
+docker-bench,container,1.1.3,Ensure auditing is configured for the Docker daemon (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.4,Ensure auditing is configured for Docker files and directories -/run/containerd (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.5,Ensure auditing is configured for Docker files and directories - /var/lib/docker (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.6,Ensure auditing is configured for Docker files and directories - /etc/docker (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.7,Ensure auditing is configured for Docker files and directories - docker.service (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.9,Ensure auditing is configured for Docker files and directories - docker.socket (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.10,Ensure auditing is configured for Docker files and directories - /etc/default/docker (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.11,Ensure auditing is configured for Dockerfiles and directories - /etc/docker/daemon.json (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.12,1.1.12 Ensure auditing is configured for Dockerfiles and directories - /etc/containerd/config.toml (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.14,Ensure auditing is configured for Docker files and directories - /usr/bin/containerd (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.17,Ensure auditing is configured for Docker files and directories - /usr/bin/containerd-shim-runc-v2 (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.1.18,Ensure auditing is configured for Docker files and directories - /usr/bin/runc (Automated),medium,FAIL,logging-monitoring
+docker-bench,container,1.2.2,Ensure that the version of Docker is up to date (Manual),medium,PASS,vulnerability-mgmt
+docker-bench,container,2.2,Ensure network traffic is restricted between containers on the default bridge (Scored),medium,FAIL,network-exposure
+docker-bench,container,2.3,Ensure the logging level is set to 'info' (Scored),medium,PASS,logging-monitoring
+docker-bench,container,2.4,Ensure Docker is allowed to make changes to iptables (Scored),medium,PASS,unmapped
+docker-bench,container,2.5,Ensure insecure registries are not used (Scored),medium,PASS,unmapped
+docker-bench,container,2.6,Ensure aufs storage driver is not used (Scored),medium,PASS,unmapped
+docker-bench,container,2.9,Enable user namespace support (Scored),medium,FAIL,unmapped
+docker-bench,container,2.10,Ensure the default cgroup usage has been confirmed (Scored),medium,PASS,unmapped
+docker-bench,container,2.11,Ensure base device size is not changed until needed (Scored),medium,PASS,unmapped
+docker-bench,container,2.12,Ensure that authorization for Docker client commands is enabled (Scored),medium,FAIL,unmapped
+docker-bench,container,2.13,Ensure centralized and remote logging is configured (Scored),medium,FAIL,logging-monitoring
+docker-bench,container,2.14,Ensure containers are restricted from acquiring new privileges (Scored),medium,FAIL,privileged-access
+docker-bench,container,2.15,Ensure live restore is enabled (Scored),medium,PASS,resilience
+docker-bench,container,2.16,Ensure Userland Proxy is Disabled (Scored),medium,PASS,network-exposure
+docker-bench,container,3.1,Ensure that the docker.service file ownership is set to root:root (Automated),medium,PASS,privileged-access
+docker-bench,container,3.2,Ensure that docker.service file permissions are appropriately set (Automated),medium,PASS,secure-configuration
+docker-bench,container,3.3,Ensure that docker.socket file ownership is set to root:root (Automated),medium,PASS,privileged-access
+docker-bench,container,3.4,Ensure that docker.socket file permissions are set to 644 or more restrictive (Automated),medium,PASS,secure-configuration
+docker-bench,container,3.5,Ensure that the /etc/docker directory ownership is set to root:root (Automated),medium,PASS,privileged-access
+docker-bench,container,3.6,Ensure that /etc/docker directory permissions are set to 755 or more restrictively (Automated),medium,PASS,secure-configuration
+docker-bench,container,3.15,Ensure that the Docker socket file ownership is set to root:docker (Automated),medium,PASS,privileged-access
+docker-bench,container,3.16,Ensure that the Docker socket file permissions are set to 660 or more restrictively (Automated),medium,FAIL,secure-configuration
+docker-bench,container,3.17,Ensure that the daemon.json file ownership is set to root:root (Automated),medium,PASS,privileged-access
+docker-bench,container,3.18,Ensure that daemon.json file permissions are set to 644 or more restrictive (Automated),medium,PASS,secure-configuration
+docker-bench,container,3.19,Ensure that the /etc/default/docker file ownership is set to root:root (Automated),medium,PASS,privileged-access
+docker-bench,container,3.20,Ensure that the /etc/default/docker file permissions are set to 644 or more restrictively (Automated),medium,PASS,secure-configuration
+docker-bench,container,3.23,Ensure that the Containerd socket file ownership is set to root:root (Automated),medium,PASS,privileged-access
+docker-bench,container,3.24,Ensure that the Containerd socket file permissions are set to 660 or more restrictively (Automated),medium,PASS,secure-configuration
+docker-bench,container,4.1,Ensure that a user for the container has been created (Automated),medium,PASS,unmapped
+docker-bench,container,4.5,Ensure Content trust for Docker is Enabled (Automated),medium,FAIL,unmapped
+docker-bench,container,4.6,Ensure that HEALTHCHECK instructions have been added to container images (Automated),medium,FAIL,vulnerability-mgmt
+docker-bench,container,4.9,Ensure that COPY is used instead of ADD in Dockerfiles (Manual),medium,PASS,unmapped
+docker-bench,container,5.1,"Ensure swarm mode is not Enabled, if not needed (Automated)",medium,PASS,unmapped
+docker-bench,container,5.2,"Ensure that, if applicable, an AppArmor Profile is enabled (Automated)",medium,PASS,secure-configuration
+docker-bench,container,5.3,"Ensure that, if applicable, SELinux security options are set (Automated)",medium,PASS,unmapped
+docker-bench,container,5.4,Ensure that Linux kernel capabilities are restricted within containers (Automated),medium,PASS,privileged-access
+docker-bench,container,5.5,Ensure that privileged containers are not used (Automated),medium,PASS,privileged-access
+docker-bench,container,5.6,Ensure sensitive host system directories are not mounted on containers (Automated),medium,PASS,secure-configuration
+docker-bench,container,5.7,Ensure sshd is not run within containers (Automated),medium,PASS,secure-configuration
+docker-bench,container,5.8,Ensure privileged ports are not mapped within containers (Automated),medium,PASS,privileged-access
+docker-bench,container,5.9,Ensure that only needed ports are open on the container (Manual),medium,FAIL,unmapped
+docker-bench,container,5.10,Ensure that the host's network namespace is not shared (Automated),medium,PASS,network-exposure
+docker-bench,container,5.11,Ensure that the memory usage for containers is limited (Automated),medium,PASS,secure-configuration
+docker-bench,container,5.12,Ensure that CPU priority is set appropriately on containers (Automated),medium,PASS,unmapped
+docker-bench,container,5.13,Ensure that the container's root filesystem is mounted as read only (Automated),medium,PASS,privileged-access
+docker-bench,container,5.14,Ensure that incoming container traffic is bound to a specific host interface (Automated),medium,PASS,unmapped
+docker-bench,container,5.15,Ensure that the 'on-failure' container restart policy is set to '5' (Automated),medium,PASS,resilience
+docker-bench,container,5.16,Ensure that the host's process namespace is not shared (Automated),medium,PASS,unmapped
+docker-bench,container,5.17,Ensure that the host's IPC namespace is not shared (Automated),medium,PASS,unmapped
+docker-bench,container,5.18,Ensure that host devices are not directly exposed to containers (Manual),medium,PASS,unmapped
+docker-bench,container,5.20,Ensure mount propagation mode is not set to shared (Automated),medium,PASS,secure-configuration
+docker-bench,container,5.21,Ensure that the host's UTS namespace is not shared (Automated),medium,PASS,unmapped
+docker-bench,container,5.22,Ensure the default seccomp profile is not Disabled (Automated),medium,PASS,secure-configuration
+docker-bench,container,5.25,Ensure that cgroup usage is confirmed (Automated),medium,PASS,unmapped
+docker-bench,container,5.26,Ensure that the container is restricted from acquiring additional privileges (Automated),medium,PASS,privileged-access
+docker-bench,container,5.27,Ensure that container health is checked at runtime (Automated),medium,PASS,secure-configuration
+docker-bench,container,5.29,Ensure that the PIDs cgroup limit is used (Automated),medium,PASS,secure-configuration
+docker-bench,container,5.31,Ensure that the host's user namespaces are not shared (Automated),medium,PASS,unmapped
+docker-bench,container,5.32,Ensure that the Docker socket is not mounted inside any containers (Automated),medium,PASS,secure-configuration
+docker-bench,container,7.1,Ensure that the minimum number of manager nodes have been created in a swarm (Automated),medium,PASS,unmapped
+docker-bench,container,7.2,Ensure that swarm services are bound to a specific host interface (Automated),medium,PASS,secure-configuration
+docker-bench,container,7.3,Ensure that all Docker swarm overlay networks are encrypted (Automated),medium,PASS,encryption
+docker-bench,container,7.4,Ensure that Docker's secret management commands are used for managing secrets in a swarm cluster (Manual),medium,PASS,secrets-management
+docker-bench,container,7.5,Ensure that swarm manager is run in auto-lock mode (Automated),medium,PASS,unmapped
+docker-bench,container,7.6,Ensure that the swarm manager auto-lock key is rotated periodically (Manual),medium,PASS,unmapped
+docker-bench,container,7.7,Ensure that node certificates are rotated as appropriate (Manual),medium,PASS,encryption
+docker-bench,container,7.8,Ensure that CA certificates are rotated as appropriate (Manual),medium,PASS,encryption
+docker-bench,container,7.9,Ensure that management plane traffic is separated from data plane traffic (Manual),medium,PASS,unmapped
+kube-bench,kubernetes,1.1.1,Ensure that the API server pod specification file permissions are set to 600 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.1.2,Ensure that the API server pod specification file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.3,Ensure that the controller manager pod specification file permissions are set to 600 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.1.4,Ensure that the controller manager pod specification file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.5,Ensure that the scheduler pod specification file permissions are set to 600 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.1.6,Ensure that the scheduler pod specification file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.7,Ensure that the etcd pod specification file permissions are set to 600 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.1.8,Ensure that the etcd pod specification file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.11,Ensure that the etcd data directory permissions are set to 700 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.1.12,Ensure that the etcd data directory ownership is set to etcd:etcd (Automated),medium,FAIL,secure-configuration
+kube-bench,kubernetes,1.1.13,Ensure that the admin.conf file permissions are set to 600 or more restrictive (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.14,Ensure that the admin.conf file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.15,Ensure that the scheduler.conf file permissions are set to 600 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.1.16,Ensure that the scheduler.conf file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.17,Ensure that the controller-manager.conf file permissions are set to 600 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.1.18,Ensure that the controller-manager.conf file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.19,Ensure that the Kubernetes PKI directory and file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.1.21,Ensure that the Kubernetes PKI key file permissions are set to 600 (Manual),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.2.2,Ensure that the --token-auth-file parameter is not set (Automated),medium,PASS,secrets-management
+kube-bench,kubernetes,1.2.4,Ensure that the --kubelet-client-certificate and --kubelet-client-key arguments are set as appropriate (Automated),medium,PASS,encryption
+kube-bench,kubernetes,1.2.5,Ensure that the --kubelet-certificate-authority argument is set as appropriate (Automated),medium,FAIL,encryption
+kube-bench,kubernetes,1.2.6,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,1.2.7,Ensure that the --authorization-mode argument includes Node (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,1.2.8,Ensure that the --authorization-mode argument includes RBAC (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.2.10,Ensure that the admission control plugin AlwaysAdmit is not set (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,1.2.13,Ensure that the admission control plugin ServiceAccount is set (Automated),medium,PASS,secrets-management
+kube-bench,kubernetes,1.2.14,Ensure that the admission control plugin NamespaceLifecycle is set (Automated),medium,PASS,resilience
+kube-bench,kubernetes,1.2.15,Ensure that the admission control plugin NodeRestriction is set (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,1.2.16,Ensure that the --profiling argument is set to false (Automated),medium,FAIL,secure-configuration
+kube-bench,kubernetes,1.2.17,Ensure that the --audit-log-path argument is set (Automated),medium,FAIL,logging-monitoring
+kube-bench,kubernetes,1.2.18,Ensure that the --audit-log-maxage argument is set to 30 or as appropriate (Automated),medium,FAIL,logging-monitoring
+kube-bench,kubernetes,1.2.19,Ensure that the --audit-log-maxbackup argument is set to 10 or as appropriate (Automated),medium,FAIL,logging-monitoring
+kube-bench,kubernetes,1.2.20,Ensure that the --audit-log-maxsize argument is set to 100 or as appropriate (Automated),medium,FAIL,logging-monitoring
+kube-bench,kubernetes,1.2.22,Ensure that the --service-account-lookup argument is set to true (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.2.23,Ensure that the --service-account-key-file argument is set as appropriate (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.2.24,Ensure that the --etcd-certfile and --etcd-keyfile arguments are set as appropriate (Automated),medium,PASS,encryption
+kube-bench,kubernetes,1.2.25,Ensure that the --tls-cert-file and --tls-private-key-file arguments are set as appropriate (Automated),medium,PASS,encryption
+kube-bench,kubernetes,1.2.26,Ensure that the --client-ca-file argument is set as appropriate (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,1.2.27,Ensure that the --etcd-cafile argument is set as appropriate (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,1.3.2,Ensure that the --profiling argument is set to false (Automated),medium,FAIL,secure-configuration
+kube-bench,kubernetes,1.3.3,Ensure that the --use-service-account-credentials argument is set to true (Automated),medium,PASS,secrets-management
+kube-bench,kubernetes,1.3.4,Ensure that the --service-account-private-key-file argument is set as appropriate (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,1.3.5,Ensure that the --root-ca-file argument is set as appropriate (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,1.3.6,Ensure that the RotateKubeletServerCertificate argument is set to true (Automated),medium,PASS,encryption
+kube-bench,kubernetes,1.3.7,Ensure that the --bind-address argument is set to 127.0.0.1 (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,1.4.1,Ensure that the --profiling argument is set to false (Automated),medium,FAIL,secure-configuration
+kube-bench,kubernetes,1.4.2,Ensure that the --bind-address argument is set to 127.0.0.1 (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,2.1,Ensure that the --cert-file and --key-file arguments are set as appropriate (Automated),medium,PASS,encryption
+kube-bench,kubernetes,2.2,Ensure that the --client-cert-auth argument is set to true (Automated),medium,PASS,encryption
+kube-bench,kubernetes,2.3,Ensure that the --auto-tls argument is not set to true (Automated),medium,PASS,encryption
+kube-bench,kubernetes,2.4,Ensure that the --peer-cert-file and --peer-key-file arguments are set as appropriate (Automated),medium,PASS,encryption
+kube-bench,kubernetes,2.5,Ensure that the --peer-client-cert-auth argument is set to true (Automated),medium,PASS,encryption
+kube-bench,kubernetes,2.6,Ensure that the --peer-auto-tls argument is not set to true (Automated),medium,PASS,encryption
+kube-bench,kubernetes,2.7,Ensure that a unique Certificate Authority is used for etcd (Manual),medium,PASS,encryption
+kube-bench,kubernetes,4.1.1,Ensure that the kubelet service file permissions are set to 600 or more restrictive (Automated),medium,FAIL,secure-configuration
+kube-bench,kubernetes,4.1.2,Ensure that the kubelet service file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,4.1.5,Ensure that the --kubeconfig kubelet.conf file permissions are set to 600 or more restrictive (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,4.1.6,Ensure that the --kubeconfig kubelet.conf file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,4.1.8,Ensure that the client certificate authorities file ownership is set to root:root (Manual),medium,PASS,privileged-access
+kube-bench,kubernetes,4.1.9,If the kubelet config.yaml configuration file is being used validate permissions set to 600 or more restrictive (Automated),medium,FAIL,secure-configuration
+kube-bench,kubernetes,4.1.10,If the kubelet config.yaml configuration file is being used validate file ownership is set to root:root (Automated),medium,PASS,privileged-access
+kube-bench,kubernetes,4.2.1,Ensure that the --anonymous-auth argument is set to false (Automated),medium,PASS,secure-configuration
+kube-bench,kubernetes,4.2.2,Ensure that the --authorization-mode argument is not set to AlwaysAllow (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,4.2.3,Ensure that the --client-ca-file argument is set as appropriate (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,4.2.4,Verify that the --read-only-port argument is set to 0 (Manual),medium,PASS,secure-configuration
+kube-bench,kubernetes,4.2.5,Ensure that the --streaming-connection-idle-timeout argument is not set to 0 (Manual),medium,PASS,unmapped
+kube-bench,kubernetes,4.2.6,Ensure that the --make-iptables-util-chains argument is set to true (Automated),medium,PASS,unmapped
+kube-bench,kubernetes,4.2.7,Ensure that the --hostname-override argument is not set (Manual),medium,PASS,unmapped
+kube-bench,kubernetes,4.2.8,Ensure that the eventRecordQPS argument is set to a level which ensures appropriate event capture (Manual),medium,PASS,unmapped
+kube-bench,kubernetes,4.2.10,Ensure that the --rotate-certificates argument is not set to false (Automated),medium,PASS,encryption
+kube-bench,kubernetes,4.2.11,Verify that the RotateKubeletServerCertificate argument is set to true (Manual),medium,PASS,encryption
+kubescape,kubernetes,C-0002,Prevent containers from allowing command execution,medium,FAIL,unmapped
+kubescape,kubernetes,C-0005,API server insecure port is enabled,high,PASS,unmapped
+kubescape,kubernetes,C-0012,Applications credentials in configuration files,high,FAIL,secrets-management
+kubescape,kubernetes,C-0013,Non-root containers,medium,FAIL,privileged-access
+kubescape,kubernetes,C-0016,Allow privilege escalation,medium,FAIL,privileged-access
+kubescape,kubernetes,C-0017,Immutable container filesystem,low,FAIL,unmapped
+kubescape,kubernetes,C-0030,Ingress and Egress blocked,medium,FAIL,network-exposure
+kubescape,kubernetes,C-0034,Automatic mapping of service account,medium,FAIL,secure-configuration
+kubescape,kubernetes,C-0035,Administrative Roles,medium,FAIL,privileged-access
+kubescape,kubernetes,C-0038,Host PID/IPC privileges,high,FAIL,privileged-access
+kubescape,kubernetes,C-0041,HostNetwork access,high,FAIL,network-exposure
+kubescape,kubernetes,C-0044,Container hostPort,medium,PASS,network-exposure
+kubescape,kubernetes,C-0046,Insecure capabilities,high,FAIL,privileged-access
+kubescape,kubernetes,C-0054,Cluster internal networking,medium,FAIL,network-exposure
+kubescape,kubernetes,C-0055,Linux hardening,medium,FAIL,unmapped
+kubescape,kubernetes,C-0057,Privileged container,high,FAIL,privileged-access
+kubescape,kubernetes,C-0058,CVE-2021-25741 - Using symlink for arbitrary host file system access.,medium,PASS,vulnerability-mgmt
+kubescape,kubernetes,C-0059,CVE-2021-25742-nginx-ingress-snippet-annotation-vulnerability,high,PASS,network-exposure
+kubescape,kubernetes,C-0066,Secret/etcd encryption enabled,medium,FAIL,secrets-management
+kubescape,kubernetes,C-0067,Audit logs enabled,medium,FAIL,logging-monitoring
+kubescape,kubernetes,C-0068,PSP enabled,low,FAIL,unmapped
+kubescape,kubernetes,C-0270,Ensure CPU limits are set,high,FAIL,secure-configuration
+kubescape,kubernetes,C-0271,Ensure memory limits are set,high,FAIL,secure-configuration
+kubescape,kubernetes,C-0292,Nginx Ingress Controller End of Life,medium,PASS,network-exposure
+checkov,iac,CKV_AWS_7,Ensure rotation for customer created CMKs is enabled [aws_kms_key.data],unknown,PASS,encryption
+checkov,iac,CKV_AWS_227,Ensure KMS key is enabled [aws_kms_key.data],unknown,PASS,encryption
+checkov,iac,CKV_AWS_33,Ensure KMS key policy does not contain wildcard (*) principal [aws_kms_key.data],unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_93,Ensure S3 bucket policy does not lockout all but root user. (Prevent lockouts needing root account fixes) [aws_s3_bucket.logs],unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_56,Ensure S3 bucket has 'restrict_public_buckets' enabled [aws_s3_bucket_public_access_block.logs],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_55,Ensure S3 bucket has ignore public ACLs enabled [aws_s3_bucket_public_access_block.logs],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_54,Ensure S3 bucket has block public policy enabled [aws_s3_bucket_public_access_block.logs],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_53,Ensure S3 bucket has block public ACLS enabled [aws_s3_bucket_public_access_block.logs],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_382,Ensure no security groups allow egress from 0.0.0.0:0 to port -1 [aws_security_group.web],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_23,Ensure every security group and rule has a description [aws_security_group.web],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_277,Ensure no security groups allow ingress from 0.0.0.0:0 to port -1 [aws_security_group.web],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_24,Ensure no security groups allow ingress from 0.0.0.0:0 to port 22 [aws_security_group.web],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_25,Ensure no security groups allow ingress from 0.0.0.0:0 to port 3389 [aws_security_group.web],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_260,Ensure no security groups allow ingress from 0.0.0.0:0 to port 80 [aws_security_group.web],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_16,Ensure all data stored in the RDS is securely encrypted at rest [aws_db_instance.payments],unknown,PASS,encryption
+checkov,iac,CKV_AWS_157,Ensure that RDS instances have Multi-AZ enabled [aws_db_instance.payments],unknown,PASS,resilience
+checkov,iac,CKV_AWS_388,Ensure AWS Aurora PostgreSQL is not exposed to local file read vulnerability [aws_db_instance.payments],unknown,PASS,vulnerability-mgmt
+checkov,iac,CKV_AWS_17,Ensure all data stored in RDS is not publicly accessible [aws_db_instance.payments],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_211,Ensure RDS uses a modern CaCert [aws_db_instance.payments],unknown,PASS,encryption
+checkov,iac,CKV_AWS_293,Ensure that AWS database instances have deletion protection enabled [aws_db_instance.payments],unknown,PASS,resilience
+checkov,iac,CKV_AWS_133,Ensure that RDS instances has backup policy [aws_db_instance.payments],unknown,PASS,resilience
+checkov,iac,CKV_AWS_226,Ensure DB instance gets all minor upgrades automatically [aws_db_instance.payments],unknown,PASS,vulnerability-mgmt
+checkov,iac,CKV_AWS_161,Ensure RDS database has IAM authentication enabled [aws_db_instance.payments],unknown,PASS,unmapped
+checkov,iac,CKV_AWS_354,Ensure RDS Performance Insights are encrypted using KMS CMKs [aws_db_instance.payments],unknown,PASS,encryption
+checkov,iac,CKV_AWS_129,Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled [aws_db_instance.payments],unknown,PASS,logging-monitoring
+checkov,iac,CKV_AWS_189,Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK) [aws_ebs_volume.data],unknown,PASS,encryption
+checkov,iac,CKV_AWS_3,Ensure all data stored in the EBS is securely encrypted [aws_ebs_volume.data],unknown,PASS,encryption
+checkov,iac,CKV_AWS_289,Ensure IAM policies does not allow permissions management / resource exposure without constraints [aws_iam_policy.app],unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_288,Ensure IAM policies does not allow data exfiltration [aws_iam_policy.app],unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_287,Ensure IAM policies does not allow credentials exposure [aws_iam_policy.app],unknown,PASS,secrets-management
+checkov,iac,CKV_AWS_286,Ensure IAM policies does not allow privilege escalation [aws_iam_policy.app],unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_290,Ensure IAM policies does not allow write access without constraints [aws_iam_policy.app],unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_62,"Ensure IAM policies that allow full ""*-*"" administrative privileges are not created [aws_iam_policy.app]",unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_63,"Ensure no IAM policies documents allow ""*"" as a statement's actions [aws_iam_policy.app]",unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_355,"Ensure no IAM policies documents allow ""*"" as a statement's resource for restrictable actions [aws_iam_policy.app]",unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_41,Ensure no hard coded AWS access key and secret key exists in provider [aws.default],unknown,PASS,secrets-management
+checkov,iac,CKV2_AWS_69,Ensure AWS RDS database instance configured with encryption in transit [aws_db_instance.payments],unknown,PASS,encryption
+checkov,iac,CKV2_AWS_2,Ensure that only encrypted EBS volumes are attached to EC2 instances [aws_ebs_volume.data],unknown,PASS,encryption
+checkov,iac,CKV2_AWS_64,Ensure KMS key Policy is defined [aws_kms_key.data],unknown,PASS,encryption
+checkov,iac,CKV2_AWS_6,Ensure that S3 bucket has a Public Access block [aws_s3_bucket.logs],unknown,PASS,network-exposure
+checkov,iac,CKV2_AWS_40,Ensure AWS IAM policy does not allow full IAM privileges [aws_iam_policy.app],unknown,PASS,privileged-access
+checkov,iac,CKV_AWS_21,Ensure all data stored in the S3 bucket have versioning enabled [aws_s3_bucket.logs],unknown,PASS,logging-monitoring
+checkov,iac,CKV2_AWS_60,Ensure RDS instance with copy tags to snapshots is enabled [aws_db_instance.payments],unknown,PASS,resilience
+checkov,iac,CKV_AWS_57,S3 Bucket has an ACL defined which allows public WRITE access. [aws_s3_bucket.logs],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_20,S3 Bucket has an ACL defined which allows public READ access. [aws_s3_bucket.logs],unknown,PASS,network-exposure
+checkov,iac,CKV_AWS_19,Ensure all data stored in the S3 bucket is securely encrypted at rest [aws_s3_bucket.logs],unknown,PASS,encryption
+checkov,iac,CKV_AWS_145,Ensure that S3 buckets are encrypted with KMS by default [aws_s3_bucket.logs],unknown,PASS,encryption
+checkov,iac,CKV_AWS_353,Ensure that RDS instances have performance insights enabled [aws_db_instance.payments],unknown,FAIL,logging-monitoring
+checkov,iac,CKV_AWS_118,Ensure that enhanced monitoring is enabled for Amazon RDS instances [aws_db_instance.payments],unknown,FAIL,logging-monitoring
+checkov,iac,CKV2_AWS_30,Ensure Postgres RDS as aws_db_instance has Query Logging enabled [aws_db_instance.payments],unknown,FAIL,logging-monitoring
+checkov,iac,CKV2_AWS_61,Ensure that an S3 bucket has a lifecycle configuration [aws_s3_bucket.logs],unknown,FAIL,logging-monitoring
+checkov,iac,CKV_AWS_18,Ensure the S3 bucket has access logging enabled [aws_s3_bucket.logs],unknown,FAIL,logging-monitoring
+trivy,iac,s3-bucket-logging,S3 Bucket Logging [main.tf],low,FAIL,logging-monitoring
+trivy,iac,AVD-AWS-0133,Enable Performance Insights to detect potential problems [main.tf],low,FAIL,logging-monitoring
+kics,iac,f861041c,S3 Bucket Logging Disabled [aws_s3_bucket.acme-payments-logs-lab],medium,FAIL,logging-monitoring
+kics,iac,92fe237e,Sensitive Port Is Exposed To Wide Private Network [aws_security_group.payments-web-sg],medium,FAIL,network-exposure
+kics,iac,e592a0c5,IAM Access Analyzer Not Enabled [n/a.n/a],low,FAIL,unmapped
+conftest,kubernetes,org-policy,[CIS K8s 5.2.12][NIST AC-6][CCM IVS-04] Deployment/legacy-web mounts hostPath /etc,high,FAIL,secure-configuration
+conftest,kubernetes,org-policy,[CIS K8s 5.2.2][NIST AC-6][CCM IVS-04] Deployment/legacy-web container web is privileged,high,FAIL,privileged-access
+conftest,kubernetes,org-policy,[CIS K8s 5.4.1][NIST IA-5][CCM IAM-14] Deployment/legacy-web has literal secret in env DB_PASSWORD,high,FAIL,secrets-management
+conftest,kubernetes,org-policy,[NIST SC-6][CCM IVS-04] Deployment/legacy-web container web has no memory limit,high,FAIL,secure-configuration
+conftest,kubernetes,org-policy,[CIS K8s 5.1.1][NIST AC-6][CCM IAM-05] cluster-admin bound to ServiceAccount legacy/default,high,FAIL,secrets-management

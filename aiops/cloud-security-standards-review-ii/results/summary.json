@@ -1,0 +1,52 @@
+{
+  "generated": "2026-11-20T05:36:37.052354+00:00",
+  "total_findings": 532,
+  "evidence_sources": 9,
+  "themes": {
+    "secrets-management": {
+      "pass": 14,
+      "fail": 27,
+      "status": "Partial"
+    },
+    "privileged-access": {
+      "pass": 47,
+      "fail": 11,
+      "status": "Partial"
+    },
+    "encryption": {
+      "pass": 28,
+      "fail": 1,
+      "status": "Partial"
+    },
+    "network-exposure": {
+      "pass": 28,
+      "fail": 9,
+      "status": "Partial"
+    },
+    "logging-monitoring": {
+      "pass": 22,
+      "fail": 42,
+      "status": "Partial"
+    },
+    "resilience": {
+      "pass": 19,
+      "fail": 0,
+      "status": "Compliant"
+    },
+    "vulnerability-mgmt": {
+      "pass": 4,
+      "fail": 6,
+      "status": "Partial"
+    },
+    "secure-configuration": {
+      "pass": 102,
+      "fail": 89,
+      "status": "Partial"
+    },
+    "unmapped": {
+      "pass": 52,
+      "fail": 31,
+      "status": "Partial"
+    }
+  }
+}
