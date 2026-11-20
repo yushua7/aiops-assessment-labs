@@ -1,0 +1,48 @@
+{
+  "threshold": 0.17841970950365074,
+  "q": 99.5,
+  "precision": 0.5888157894736842,
+  "recall": 0.895,
+  "f1": 0.7103174603174603,
+  "events_detected": 6,
+  "events_total": 6,
+  "false_alarm_episodes": 11,
+  "per_event": [
+    {
+      "type": "latency_spike",
+      "detected": true,
+      "delay_min": 0,
+      "max_score": 21.468036651611328
+    },
+    {
+      "type": "cpu_saturation",
+      "detected": true,
+      "delay_min": 0,
+      "max_score": 6.88351583480835
+    },
+    {
+      "type": "error_burst",
+      "detected": true,
+      "delay_min": 0,
+      "max_score": 45.01491165161133
+    },
+    {
+      "type": "memory_leak",
+      "detected": true,
+      "delay_min": 9,
+      "max_score": 3.6721081733703613
+    },
+    {
+      "type": "latency_shift",
+      "detected": true,
+      "delay_min": 0,
+      "max_score": 1.5044149160385132
+    },
+    {
+      "type": "cpu_latency_decouple",
+      "detected": true,
+      "delay_min": 0,
+      "max_score": 1.1807010173797607
+    }
+  ]
+}

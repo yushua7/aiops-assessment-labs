@@ -1,0 +1,13 @@
+{
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "recall_by_kind": {
+    "auth_failure": 1.0,
+    "checksum": 1.0,
+    "disk_error": 1.0,
+    "out_of_order": 1.0,
+    "timeout": 1.0
+  },
+  "mask_invariance_max_diff": 0.0
+}
