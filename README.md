@@ -9,5 +9,6 @@ Professional-level hands-on labs completed in the AIOps Additional Assessment La
 | AIOps | [Bash Script Deep Dive II: log-anomaly detection, alerting, tests, systemd](aiops/bash-script-deep-dive-ii) | Done |
 | AIOps | [Cloud Security Standards Review II: CIS, NIST and CCM control matrix](aiops/cloud-security-standards-review-ii) | Done |
 | AIOps | [Computer Vision II: YOLOv8 detector, ONNX service, drift monitoring](aiops/computer-vision-ii) | Done |
+| AIOps | [Deep Learning II: LSTM, GRU, autoencoder, DeepLog, Transformer, ONNX service](aiops/deep-learning-ii) | Done |
 | DevOps | Docker, Ansible, Kubernetes | Coming soon |
 | SysOps | RHEL, cloud security | Coming soon |
