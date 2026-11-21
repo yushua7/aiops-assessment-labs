@@ -1,0 +1,5 @@
+
+localhost:5000/anomalyops/anomaly-api:1.0 (debian 12.15)
+========================================================
+Total: 0 (CRITICAL: 0)
+
