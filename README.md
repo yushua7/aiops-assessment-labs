@@ -12,5 +12,6 @@ Professional-level hands-on labs completed in the AIOps Additional Assessment La
 | AIOps | [Deep Learning II: LSTM, GRU, autoencoder, DeepLog, Transformer, ONNX service](aiops/deep-learning-ii) | Done |
 | AIOps | [Deep Learning, Open Source Perspective: PyTorch to ONNX to MLflow to container](aiops/deep-learning-open-source-perspective) | Done |
 | AIOps | [Docker Deep Dive II: hardened multi-stage build, Compose stack, registry, Trivy, AIOps monitor](aiops/docker-deep-dive-ii) | Done |
+| AIOps | [Kubernetes Administrator II: RBAC, quotas, storage, network policies, drain, etcd restore, break-fix](aiops/kubernetes-administrator-ii) | Done |
 | DevOps | Docker, Ansible, Kubernetes | Coming soon |
 | SysOps | RHEL, cloud security | Coming soon |
