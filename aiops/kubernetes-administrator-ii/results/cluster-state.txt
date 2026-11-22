@@ -1,0 +1,54 @@
+## nodes
+NAME                STATUS   ROLES           AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION   CONTAINER-RUNTIME
+ops-control-plane   Ready    control-plane   8m42s   v1.31.0   172.18.0.3    <none>        Debian GNU/Linux 12 (bookworm)   7.0.0-1014-aws   containerd://1.7.18
+ops-worker          Ready    <none>          8m27s   v1.31.0   172.18.0.2    <none>        Debian GNU/Linux 12 (bookworm)   7.0.0-1014-aws   containerd://1.7.18
+ops-worker2         Ready    <none>          8m27s   v1.31.0   172.18.0.4    <none>        Debian GNU/Linux 12 (bookworm)   7.0.0-1014-aws   containerd://1.7.18
+
+## payments workloads
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/api        3/3     3            3           7m42s
+deployment.apps/cache      1/1     1            1           7m38s
+deployment.apps/frontend   1/1     1            1           6m41s
+deployment.apps/intruder   1/1     1            1           6m40s
+deployment.apps/probe      1/1     1            1           6m40s
+
+NAME                      READY   AGE
+statefulset.apps/ledger   2/2     7m35s
+
+NAME                                  STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/data-ledger-0   Bound    pvc-be3cf2af-c592-48a4-b92c-e9e5ae289c00   200Mi      RWO            retain-local   <unset>                 7m35s
+persistentvolumeclaim/data-ledger-1   Bound    pvc-ebca2376-0a22-4f91-a476-1f2f69f08630   200Mi      RWO            retain-local   <unset>                 7m27s
+
+NAME                                                           POD-SELECTOR        AGE
+networkpolicy.networking.k8s.io/allow-cache-client-egress      cache-access=true   6m38s
+networkpolicy.networking.k8s.io/allow-cache-ingress            app=cache           6m38s
+networkpolicy.networking.k8s.io/allow-dns-egress               <none>              6m38s
+networkpolicy.networking.k8s.io/allow-frontend-egress-to-api   role=frontend       6m38s
+networkpolicy.networking.k8s.io/allow-frontend-to-api          app=api             6m38s
+networkpolicy.networking.k8s.io/default-deny-all               <none>              6m38s
+
+NAME                                 MIN AVAILABLE   MAX UNAVAILABLE   ALLOWED DISRUPTIONS   AGE
+poddisruptionbudget.policy/api-pdb   2               N/A               1                     6m12s
+
+## storage classes
+NAME                 PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+retain-local         rancher.io/local-path   Retain          WaitForFirstConsumer   false                  7m36s
+standard (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  8m37s
+
+## quota
+Name:                   payments-quota
+Namespace:              payments
+Resource                Used    Hard
+--------                ----    ----
+limits.cpu              1800m   4
+limits.memory           1152Mi  4Gi
+persistentvolumeclaims  2       5
+pods                    9       15
+requests.cpu            900m    2
+requests.memory         576Mi   2Gi
+requests.storage        400Mi   5Gi
+
+## access checks (dana)
+create deployments   yes
+delete pods          no
+list secrets         no
