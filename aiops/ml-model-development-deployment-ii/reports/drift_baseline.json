@@ -1,0 +1,45 @@
+{
+  "reference": "data/telemetry_v1.csv",
+  "current": "data/window_baseline.csv",
+  "reference_rows": 20000,
+  "current_rows": 2000,
+  "features": {
+    "cpu_util": {
+      "psi": 0.0049,
+      "ks_pvalue": 0.6414807351764364,
+      "status": "stable"
+    },
+    "mem_util": {
+      "psi": 0.011,
+      "ks_pvalue": 0.011253584075307865,
+      "status": "stable"
+    },
+    "io_wait": {
+      "psi": 0.0038,
+      "ks_pvalue": 0.9973682276679748,
+      "status": "stable"
+    },
+    "p95_latency_ms": {
+      "psi": 0.0071,
+      "ks_pvalue": 0.36773379414892937,
+      "status": "stable"
+    },
+    "req_per_sec": {
+      "psi": 0.0055,
+      "ks_pvalue": 0.5318251505931513,
+      "status": "stable"
+    },
+    "error_rate": {
+      "psi": 0.0103,
+      "ks_pvalue": 0.121790786898747,
+      "status": "stable"
+    },
+    "gc_pause_ms": {
+      "psi": 0.0105,
+      "ks_pvalue": 0.056200414487790784,
+      "status": "stable"
+    }
+  },
+  "drift_detected": false,
+  "significant_features": []
+}

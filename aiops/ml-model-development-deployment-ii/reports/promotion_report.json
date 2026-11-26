@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-11-26T04:34:38+00:00",
+  "champion": {
+    "alias": "champion",
+    "version": "1",
+    "threshold": 0.6581836024708266,
+    "v1_roc_auc": 0.8294108645580821,
+    "v1_pr_auc": 0.5251320655670567,
+    "v1_f1": 0.48934356351236147,
+    "v1_pred_rate": 0.1665,
+    "v1_true_rate": 0.12675,
+    "v2_roc_auc": 0.7839262576633768,
+    "v2_pr_auc": 0.6702811809189768,
+    "v2_f1": 0.6204325130499627,
+    "v2_pred_rate": 0.4975,
+    "v2_true_rate": 0.340625
+  },
+  "challenger": {
+    "alias": "challenger",
+    "version": "2",
+    "threshold": 0.28598372586487597,
+    "v1_roc_auc": 0.8236743986705447,
+    "v1_pr_auc": 0.4980053855708844,
+    "v1_f1": 0.46730975348338694,
+    "v1_pred_rate": 0.1065,
+    "v1_true_rate": 0.12675,
+    "v2_roc_auc": 0.8654411061350493,
+    "v2_pr_auc": 0.7947660090554142,
+    "v2_f1": 0.704225352112676,
+    "v2_pred_rate": 0.5025,
+    "v2_true_rate": 0.340625
+  },
+  "passed": true,
+  "reasons": [
+    "PASS recent-data gain +0.1245 >= 0.0100",
+    "PASS v1 regression +0.0271 <= 0.0500"
+  ],
+  "min_gain": 0.01,
+  "max_regression": 0.05
+}
