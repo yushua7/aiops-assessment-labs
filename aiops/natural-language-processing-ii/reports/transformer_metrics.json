@@ -1,0 +1,7 @@
+{
+  "model": "google/bert_uncased_L-4_H-256_A-4",
+  "max_length": 48,
+  "train_seconds": 110.8,
+  "accuracy": 1.0,
+  "f1_macro": 1.0
+}

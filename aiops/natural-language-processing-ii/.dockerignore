@@ -1,0 +1,7 @@
+.venv
+work
+reports
+scripts
+**/__pycache__
+models/ner
+models/baseline.joblib

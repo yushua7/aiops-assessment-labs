@@ -1,0 +1,56 @@
+{
+  "raw": {
+    "best_k_by_silhouette": 8,
+    "silhouette_k5": 0.155,
+    "ari": 0.395,
+    "homogeneity": 0.53
+  },
+  "normalised": {
+    "best_k_by_silhouette": 8,
+    "silhouette_k5": 0.195,
+    "ari": 0.514,
+    "homogeneity": 0.597
+  },
+  "topics": {
+    "0": [
+      "nfs",
+      "disk",
+      "percent",
+      "var",
+      "backup",
+      "space"
+    ],
+    "1": [
+      "inventory",
+      "svc",
+      "checkout",
+      "storm",
+      "rollback",
+      "logging"
+    ],
+    "2": [
+      "router",
+      "session",
+      "bgp",
+      "edge",
+      "peer",
+      "flapping"
+    ],
+    "3": [
+      "waf",
+      "ids",
+      "triggered",
+      "malware",
+      "quarantine",
+      "signature"
+    ],
+    "4": [
+      "timing",
+      "latency",
+      "ms",
+      "reports",
+      "talking",
+      "api"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "google/bert_uncased_L-4_H-256_A-4",
+  "min": 14,
+  "p50": 29,
+  "p95": 38,
+  "p99": 41,
+  "max": 47,
+  "tokens_per_word": 2.33,
+  "unk_tokens": 0,
+  "recommended_max_length": 48,
+  "truncated_fraction": 0.0
+}

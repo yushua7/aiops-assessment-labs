@@ -1,0 +1,6 @@
+{
+  "model": "tfidf-logreg",
+  "val_f1_macro": 0.996,
+  "accuracy": 0.9956,
+  "f1_macro": 0.9955
+}

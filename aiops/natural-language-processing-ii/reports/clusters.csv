@@ -1,0 +1,451 @@
+id,label,cluster,text
+INC101050,database,3,[P3] Database customers on stor-13 rejected new connections with MYSQL-1205 Please investigate.
+INC101051,application,4,[P2] Memory usage of checkout-web on cache-36.prod.local keeps growing until it is killed with NPE-001 Please investigate.
+INC101052,application,4,payments-api returning HTTP-503 to users after deploy on app-28 Started after last deploy.
+INC101053,database,1,"Transaction rollback storm in inventory, billing-batch logging ORA-01555 Started after last deploy."
+INC101054,application,4,"Response time of search-api above 1139 ms, error rate rising with NPE-001 Please investigate."
+INC101055,security,3,"[P3] WAF blocked SQL injection attempt against checkout-web from 10.185.104.83, rule WAF-942100 Happening intermittently."
+INC101056,application,1,[P3] checkout-web returning OOM-137 to users after deploy on lb-11
+INC101057,security,3,"[P3] User svc_backup attempted privilege escalation on cache-26.prod.local, IDS-2019 Started after last deploy."
+INC101058,storage,0,"[P1] Backup to 10.32.89.168 failed because /var/lib/docker has no space left, XFS-117 Raised by on-call."
+INC101059,network,2,"BGP session flapping on edge router app-09.prod.local, peer 10.42.243.147"
+INC101060,network,4,"Customer reports: Load balancer health checks failing for lb-19.dc1.internal, ECONNRESET from 10.162.132.135"
+INC101061,storage,0,"[P1] NFS mount /var/log on stor-15.prod.local is unresponsive, error ENOSPC"
+INC101062,application,1,"monitoring alert - inventory-svc pods restarting in a loop on mq-36, exit code http-503 raised by on-call."
+INC101063,storage,0,Disk usage on edge-28.dc1.internal reached 69 percent on /var/lib/docker
+INC101064,network,4,customer reports: payments-api on auth-36 fails to reach 10.224.124.237 with econnreset
+INC101065,database,4,replication lag on lb-33.prod.local is 1239 seconds for customers
+INC101066,network,4,"High latency on link to 10.247.72.178, payments-api reports NET-0042 Please investigate."
+INC101067,storage,0,Disk usage on web-01 reached 33 percent on /var/log
+INC101068,application,1,"Unhandled exception in checkout-web, stack trace shows NPE-001 Please investigate."
+INC101069,security,3,"URGENT: WAF blocked SQL injection attempt against search-api from 10.59.154.199, rule WAF-942100 Raised by on-call."
+INC101070,database,1,"customer reports: deadlock detected on orders database on mq-09, error ora-01555 raised by checkout-web"
+INC101071,security,3,"Multiple failed SSH logins on cache-11 from 10.114.210.82, alert IDS-2019"
+INC101072,security,3,"Monitoring alert - Multiple failed SSH logins on mq-38 from 10.197.56.44, alert IDS-2019"
+INC101073,network,4,"Load balancer health checks failing for edge-28, EHOSTUNREACH from 10.127.100.43 Happening intermittently."
+INC101074,security,3,"Monitoring alert - Malware signature found on edge-22, quarantine triggered with WAF-942100 Started after last deploy."
+INC101075,storage,1,"Customer reports: inventory-svc write failed on edge-35.prod.local with ENOSPC, volume /data is read-only Started after last deploy."
+INC101076,network,2,"[P1] BGP session flapping on edge router mq-02, peer 10.39.138.32"
+INC101077,security,3,URGENT: Suspicious outbound traffic from cache-08 to 10.3.154.198 flagged IDS-2019
+INC101078,application,4,"Customer reports: billing-batch timing out for users, HTTP-500 seen on db-13"
+INC101079,database,4,"URGENT: Slow queries on sessions at cache-31 (10.4.87.22), average latency 1350 ms"
+INC101080,security,3,"[P2] Expired TLS certificate on search-api detected by scanner, IDS-2019 Started after last deploy."
+INC101081,database,1,URGENT: Database ledger on edge-11 rejected new connections with PG-53300 Happening intermittently.
+INC101082,database,1,"[P3] Transaction rollback storm in sessions, billing-batch logging ORA-00060 Happening intermittently."
+INC101083,database,1,"Transaction rollback storm in customers, checkout-web logging PG-40P01"
+INC101084,storage,0,"[P1] I/O wait above 82 percent on web-26, storage latency spiking Started after last deploy."
+INC101085,network,4,URGENT: auth-service on app-13 fails to reach 10.90.134.234 with ETIMEDOUT Please investigate.
+INC101086,network,4,"High latency on link to 10.26.94.162, notification-svc reports ECONNRESET"
+INC101087,database,1,"Transaction rollback storm in customers, checkout-web logging ORA-01555 Happening intermittently."
+INC101088,database,1,"URGENT: Deadlock detected on inventory database on auth-34, error PG-40P01 raised by inventory-svc"
+INC101089,security,3,"[P1] Multiple failed SSH logins on edge-38.dc1.internal from 10.201.82.197, alert AUTH-401 Raised by on-call."
+INC101090,storage,0,"backup to 10.56.137.94 failed because /mnt/backups has no space left, xfs-117"
+INC101091,application,1,[P1] Feature flag change broke checkout flow in payments-api on k8s-node-25 Raised by on-call.
+INC101092,storage,0,Disk usage on edge-36 reached 48 percent on /data Please investigate.
+INC101093,database,4,Customer reports: checkout-web timing out while talking to inventory on lb-17.dc1.internal
+INC101094,network,4,"DNS lookups from auth-07.prod.local timing out, upstream resolver 10.73.6.36 not answering"
+INC101095,network,2,"URGENT: BGP session flapping on edge router k8s-node-10.prod.local, peer 10.74.17.154 Started after last deploy."
+INC101096,database,3,URGENT: Database customers on k8s-node-11 rejected new connections with MYSQL-1205 Started after last deploy.
+INC101097,storage,0,"[p3] raid array degraded on web-23.dc1.internal, one disk reporting eio please investigate."
+INC101098,application,1,Feature flag change broke checkout flow in notification-svc on app-10
+INC101099,application,1,"inventory-svc timing out for users, OOM-137 seen on k8s-node-28.dc1.internal"
+INC101100,storage,0,"[P1] NFS mount /data on k8s-node-10.dc1.internal is unresponsive, error XFS-117"
+INC101101,application,1,"[P3] inventory-svc pods restarting in a loop on lb-29.prod.local, exit code HTTP-500 Started after last deploy."
+INC101102,security,3,Suspicious outbound traffic from mq-05.dc1.internal to 10.167.174.26 flagged SEC-4011 Please investigate.
+INC101103,database,1,[P3] Database sessions on web-39.prod.local rejected new connections with PG-40P01
+INC101104,network,4,[P2] Packet loss of 63 percent between web-14 and 10.192.136.239 Raised by on-call.
+INC101105,application,1,"[P1] Unhandled exception in checkout-web, stack trace shows OOM-137 Raised by on-call."
+INC101106,network,4,"URGENT: High latency on link to 10.205.128.160, notification-svc reports ECONNRESET Raised by on-call."
+INC101107,application,1,Feature flag change broke checkout flow in inventory-svc on cache-19.prod.local Started after last deploy.
+INC101108,database,4,"[P2] Slow queries on ledger at web-31 (10.83.231.19), average latency 71 ms"
+INC101109,network,4,URGENT: auth-service timing out while talking to k8s-node-39.prod.local (10.88.155.8)
+INC101110,application,4,"payments-api timing out for users, NPE-001 seen on stor-35.dc1.internal"
+INC101111,storage,0,"[P1] NFS mount /var/lib/docker on mq-06.prod.local is unresponsive, error XFS-117"
+INC101112,network,2,"BGP session flapping on edge router app-05, peer 10.139.78.113 Raised by on-call."
+INC101113,application,1,Monitoring alert - Memory usage of inventory-svc on web-38.prod.local keeps growing until it is killed with HTTP-500 Started after last deploy.
+INC101114,security,3,"Expired TLS certificate on auth-service detected by scanner, IDS-2019"
+INC101115,security,3,"Monitoring alert - Malware signature found on app-16, quarantine triggered with IDS-2019 Raised by on-call."
+INC101116,storage,0,"[P1] Backup to 10.152.63.139 failed because /var/log has no space left, EIO"
+INC101117,security,3,"User mkhan attempted privilege escalation on lb-38, IDS-2019 Please investigate."
+INC101118,storage,0,"Backup to 10.107.61.241 failed because /data has no space left, XFS-117 Happening intermittently."
+INC101119,storage,0,"Customer reports: NFS mount /var/lib/docker on lb-39 is unresponsive, error NFS-STALE Raised by on-call."
+INC101120,application,1,"URGENT: orders-worker pods restarting in a loop on stor-13, exit code NPE-001 Raised by on-call."
+INC101121,network,4,"Load balancer health checks failing for edge-20.dc1.internal, NET-0042 from 10.54.183.125 Raised by on-call."
+INC101122,security,3,"[P1] Expired TLS certificate on billing-batch detected by scanner, AUTH-401 Raised by on-call."
+INC101123,network,2,"BGP session flapping on edge router lb-03.dc1.internal, peer 10.11.174.112"
+INC101124,security,3,"[P3] Multiple failed SSH logins on db-27 from 10.180.161.179, alert IDS-2019 Happening intermittently."
+INC101125,database,1,"Customer reports: Transaction rollback storm in sessions, orders-worker logging PG-53300 Started after last deploy."
+INC101126,network,4,Packet loss of 93 percent between lb-26 and 10.39.166.203 Raised by on-call.
+INC101127,storage,0,"NFS mount /mnt/backups on edge-10.prod.local is unresponsive, error XFS-117 Started after last deploy."
+INC101128,database,4,[P1] Replication lag on auth-23 is 1523 seconds for customers Raised by on-call.
+INC101129,storage,0,"Customer reports: NFS mount /var/log on app-28.dc1.internal is unresponsive, error NFS-STALE Raised by on-call."
+INC101130,database,1,Monitoring alert - Database orders on cache-27 rejected new connections with ORA-01555
+INC101131,security,3,"Customer reports: User jsmith attempted privilege escalation on auth-15.prod.local, AUTH-401"
+INC101132,application,4,Monitoring alert - Memory usage of search-api on mq-06.prod.local keeps growing until it is killed with NPE-001 Raised by on-call.
+INC101133,storage,0,"Customer reports: auth-service write failed on db-26.dc1.internal with EIO, volume /var/lib/docker is read-only"
+INC101134,network,2,"URGENT: BGP session flapping on edge router k8s-node-09, peer 10.98.115.9"
+INC101135,application,4,"[p3] payments-api timing out for users, http-500 seen on web-01"
+INC101136,storage,0,"notification-svc write failed on cache-32.dc1.internal with NFS-STALE, volume /var/log is read-only Started after last deploy."
+INC101137,security,3,"Monitoring alert - Multiple failed SSH logins on cache-11 from 10.195.19.26, alert IDS-2019"
+INC101138,storage,0,"Backup to 10.56.100.247 failed because /srv/nfs/shared has no space left, XFS-117 Happening intermittently."
+INC101139,database,1,"URGENT: Transaction rollback storm in customers, payments-api logging ORA-00060"
+INC101140,network,4,auth-service on cache-38 fails to reach 10.119.10.158 with EHOSTUNREACH
+INC101141,application,1,"[P1] inventory-svc pods restarting in a loop on db-16.dc1.internal, exit code HTTP-500 Raised by on-call."
+INC101142,database,3,Database customers on web-19 rejected new connections with MYSQL-1205
+INC101143,database,1,"Transaction rollback storm in customers, orders-worker logging MYSQL-1205"
+INC101144,storage,0,Disk usage on cache-09.prod.local reached 55 percent on /srv/nfs/shared
+INC101145,application,4,"[P3] search-api timing out for users, HTTP-500 seen on stor-08.dc1.internal Raised by on-call."
+INC101146,database,4,"[P3] Slow queries on inventory at cache-39.dc1.internal (10.50.58.219), average latency 954 ms Started after last deploy."
+INC101147,database,1,"Transaction rollback storm in customers, checkout-web logging MYSQL-1205 Started after last deploy."
+INC101148,network,4,"DNS lookups from mq-10 timing out, upstream resolver 10.36.137.163 not answering Please investigate."
+INC101149,security,3,"[P2] Expired TLS certificate on auth-service detected by scanner, AUTH-401"
+INC101150,storage,0,"NFS mount /var/lib/docker on auth-05.prod.local is unresponsive, error ENOSPC Raised by on-call."
+INC101151,application,4,"Monitoring alert - auth-service timing out for users, HTTP-500 seen on db-02 Raised by on-call."
+INC101152,network,2,"BGP session flapping on edge router cache-40, peer 10.193.194.12 Started after last deploy."
+INC101153,storage,0,"[P3] Backup to 10.29.125.180 failed because /var/lib/docker has no space left, EIO"
+INC101154,storage,0,"Backup to 10.249.147.17 failed because /mnt/backups has no space left, ENOSPC Started after last deploy."
+INC101155,database,1,"Customer reports: Transaction rollback storm in orders, notification-svc logging ORA-01555 Started after last deploy."
+INC101156,storage,0,"I/O wait above 46 percent on app-13, storage latency spiking Raised by on-call."
+INC101157,network,4,search-api on app-28.dc1.internal fails to reach 10.209.234.244 with ETIMEDOUT Please investigate.
+INC101158,security,3,"monitoring alert - multiple failed ssh logins on mq-31.prod.local from 10.198.148.104, alert auth-401"
+INC101159,storage,0,[P2] Disk usage on edge-08.prod.local reached 42 percent on /mnt/backups Raised by on-call.
+INC101160,application,1,"Response time of notification-svc above 1861 ms, error rate rising with NPE-001 Please investigate."
+INC101161,network,4,"[P2] Load balancer health checks failing for auth-04.prod.local, ECONNRESET from 10.149.39.132 Raised by on-call."
+INC101162,application,1,Monitoring alert - notification-svc returning OOM-137 to users after deploy on mq-38.prod.local Raised by on-call.
+INC101163,application,3,search-api returning HTTP-500 to users after deploy on auth-33 Started after last deploy.
+INC101164,database,4,Replication lag on web-18.dc1.internal is 1516 seconds for sessions Started after last deploy.
+INC101165,security,3,"[P2] Malware signature found on auth-37, quarantine triggered with WAF-942100 Please investigate."
+INC101166,storage,0,"[P3] search-api write failed on db-09 with XFS-117, volume /var/log is read-only Happening intermittently."
+INC101167,storage,0,"[P1] I/O wait above 48 percent on mq-02.dc1.internal, storage latency spiking"
+INC101168,security,3,"Expired TLS certificate on billing-batch detected by scanner, IDS-2019 Started after last deploy."
+INC101169,database,4,[P3] payments-api timing out while talking to orders on k8s-node-20.dc1.internal Started after last deploy.
+INC101170,application,1,feature flag change broke checkout flow in billing-batch on db-31
+INC101171,storage,0,Customer reports: Disk usage on auth-07.prod.local reached 64 percent on /data
+INC101172,database,4,billing-batch timing out while talking to customers on mq-05.prod.local
+INC101173,network,4,"[p1] high latency on link to 10.205.112.115, search-api reports etimedout"
+INC101174,network,4,URGENT: checkout-web timing out while talking to mq-18.prod.local (10.82.131.176) Please investigate.
+INC101175,application,4,checkout-web returning HTTP-500 to users after deploy on edge-20.dc1.internal Raised by on-call.
+INC101176,security,3,"Monitoring alert - Expired TLS certificate on checkout-web detected by scanner, WAF-942100 Please investigate."
+INC101177,application,1,"[P3] Response time of inventory-svc above 452 ms, error rate rising with OOM-137 Happening intermittently."
+INC101178,security,3,"URGENT: Malware signature found on auth-31.prod.local, quarantine triggered with AUTH-401 Started after last deploy."
+INC101179,database,4,"[P2] search-api cannot acquire a connection from the pool, sessions reports PG-40P01 Started after last deploy."
+INC101180,network,1,notification-svc timing out while talking to app-23.prod.local (10.240.4.177) Happening intermittently.
+INC101181,security,3,"URGENT: Expired TLS certificate on billing-batch detected by scanner, SEC-4011"
+INC101182,network,4,[P1] orders-worker timing out while talking to stor-19 (10.18.155.187) Raised by on-call.
+INC101183,network,2,"Customer reports: BGP session flapping on edge router web-40.prod.local, peer 10.30.30.92 Raised by on-call."
+INC101184,security,3,[P2] Suspicious outbound traffic from stor-39 to 10.57.144.92 flagged IDS-2019 Happening intermittently.
+INC101185,network,4,"URGENT: DNS lookups from mq-07.prod.local timing out, upstream resolver 10.72.211.229 not answering Started after last deploy."
+INC101186,network,2,"Customer reports: BGP session flapping on edge router app-26, peer 10.17.60.62 Raised by on-call."
+INC101187,storage,0,"Backup to 10.255.235.146 failed because /var/log has no space left, EIO Please investigate."
+INC101188,database,1,"[P2] Transaction rollback storm in orders, notification-svc logging ORA-01555"
+INC101189,database,4,customer reports: billing-batch timing out while talking to sessions on app-05.dc1.internal happening intermittently.
+INC101190,security,3,"User mkhan attempted privilege escalation on stor-31.prod.local, SEC-4011 Started after last deploy."
+INC101191,network,4,"Monitoring alert - Load balancer health checks failing for auth-20, EHOSTUNREACH from 10.17.27.177"
+INC101192,application,4,[p1] orders-worker returning http-500 to users after deploy on k8s-node-38.dc1.internal happening intermittently.
+INC101193,network,4,orders-worker timing out while talking to stor-11.prod.local (10.116.247.96) Raised by on-call.
+INC101194,database,1,"[P1] orders-worker cannot acquire a connection from the pool, inventory reports PG-40P01 Raised by on-call."
+INC101195,security,3,"[P2] Malware signature found on app-17.prod.local, quarantine triggered with SEC-4011"
+INC101196,storage,0,"NFS mount /mnt/backups on web-29 is unresponsive, error ENOSPC Happening intermittently."
+INC101197,storage,0,"[P3] Backup to 10.249.221.227 failed because /srv/nfs/shared has no space left, NFS-STALE Started after last deploy."
+INC101198,application,1,"URGENT: Unhandled exception in inventory-svc, stack trace shows OOM-137 Started after last deploy."
+INC101199,database,1,Database customers on k8s-node-32.prod.local rejected new connections with ORA-01555
+INC101200,storage,0,"Backup to 10.82.234.95 failed because /data has no space left, EIO"
+INC101201,database,1,"Transaction rollback storm in sessions, inventory-svc logging ORA-00060 Started after last deploy."
+INC101202,storage,0,"[P3] I/O wait above 49 percent on app-15, storage latency spiking Started after last deploy."
+INC101203,network,4,[P2] checkout-web on lb-14.dc1.internal fails to reach 10.219.61.60 with ETIMEDOUT
+INC101204,storage,0,"nfs mount /data on auth-31 is unresponsive, error enospc started after last deploy."
+INC101205,database,1,[P3] inventory-svc timing out while talking to sessions on k8s-node-40 Raised by on-call.
+INC101206,storage,0,"[P2] I/O wait above 43 percent on lb-07, storage latency spiking"
+INC101207,storage,0,Customer reports: Disk usage on lb-18 reached 70 percent on /data
+INC101208,application,1,"URGENT: payments-api pods restarting in a loop on stor-27, exit code HTTP-503 Raised by on-call."
+INC101209,database,4,"search-api cannot acquire a connection from the pool, sessions reports ORA-00060 Happening intermittently."
+INC101210,security,3,"Malware signature found on k8s-node-35, quarantine triggered with IDS-2019 Started after last deploy."
+INC101211,application,1,"inventory-svc pods restarting in a loop on web-11, exit code HTTP-500 Raised by on-call."
+INC101212,security,1,"Expired TLS certificate on inventory-svc detected by scanner, SEC-4011 Raised by on-call."
+INC101213,database,4,URGENT: Replication lag on db-18.dc1.internal is 457 seconds for ledger Raised by on-call.
+INC101214,security,3,"User adeleon attempted privilege escalation on web-16.dc1.internal, AUTH-401"
+INC101215,storage,0,"[p1] i/o wait above 52 percent on auth-14.prod.local, storage latency spiking"
+INC101216,security,3,"[P1] User mkhan attempted privilege escalation on auth-22.dc1.internal, SEC-4011 Started after last deploy."
+INC101217,database,4,[P3] billing-batch timing out while talking to inventory on mq-34.dc1.internal
+INC101218,storage,0,[P3] Disk usage on mq-32 reached 39 percent on /data Please investigate.
+INC101219,network,4,"URGENT: Load balancer health checks failing for auth-29, EHOSTUNREACH from 10.248.204.190 Raised by on-call."
+INC101220,application,1,"URGENT: orders-worker pods restarting in a loop on app-22, exit code HTTP-503 Please investigate."
+INC101221,network,4,"DNS lookups from db-22.dc1.internal timing out, upstream resolver 10.84.199.48 not answering Started after last deploy."
+INC101222,network,4,[P1] auth-service timing out while talking to stor-37 (10.2.92.107) Raised by on-call.
+INC101223,network,4,"URGENT: DNS lookups from stor-12.dc1.internal timing out, upstream resolver 10.35.251.251 not answering Happening intermittently."
+INC101224,security,3,"WAF blocked SQL injection attempt against search-api from 10.229.5.43, rule WAF-942100 Started after last deploy."
+INC101225,database,1,"URGENT: Transaction rollback storm in ledger, orders-worker logging ORA-00060"
+INC101226,database,1,"Transaction rollback storm in inventory, auth-service logging ORA-01555"
+INC101227,network,2,"BGP session flapping on edge router auth-34, peer 10.114.24.72 Happening intermittently."
+INC101228,security,3,"[P1] Multiple failed SSH logins on lb-11 from 10.242.3.117, alert WAF-942100 Please investigate."
+INC101229,security,3,"[P2] User adeleon attempted privilege escalation on stor-35.prod.local, IDS-2019"
+INC101230,database,1,"Monitoring alert - orders-worker cannot acquire a connection from the pool, customers reports MYSQL-1205 Raised by on-call."
+INC101231,network,4,Packet loss of 73 percent between web-02 and 10.249.223.250 Started after last deploy.
+INC101232,network,1,Monitoring alert - inventory-svc timing out while talking to app-28 (10.201.18.170) Please investigate.
+INC101233,database,4,"Slow queries on customers at edge-38 (10.210.11.63), average latency 1204 ms"
+INC101234,database,1,"orders-worker cannot acquire a connection from the pool, inventory reports pg-40p01 please investigate."
+INC101235,database,4,URGENT: Replication lag on auth-06 is 147 seconds for inventory Raised by on-call.
+INC101236,storage,0,Monitoring alert - Disk usage on web-04.prod.local reached 81 percent on /var/log Raised by on-call.
+INC101237,application,1,Customer reports: Feature flag change broke checkout flow in orders-worker on mq-36 Raised by on-call.
+INC101238,network,4,"URGENT: DNS lookups from app-06.prod.local timing out, upstream resolver 10.87.60.4 not answering Please investigate."
+INC101239,network,1,URGENT: notification-svc on auth-02.prod.local fails to reach 10.79.48.10 with EHOSTUNREACH Please investigate.
+INC101240,network,1,Monitoring alert - notification-svc timing out while talking to cache-18 (10.53.25.238)
+INC101241,application,4,"Customer reports: Unhandled exception in payments-api, stack trace shows HTTP-503 Raised by on-call."
+INC101242,storage,0,"[P2] I/O wait above 60 percent on k8s-node-01, storage latency spiking Started after last deploy."
+INC101243,network,2,"URGENT: BGP session flapping on edge router app-06.dc1.internal, peer 10.116.213.62 Raised by on-call."
+INC101244,network,4,urgent: packet loss of 55 percent between lb-38 and 10.150.76.84 raised by on-call.
+INC101245,security,3,"Multiple failed SSH logins on cache-28.prod.local from 10.134.87.104, alert AUTH-401 Raised by on-call."
+INC101246,security,3,"URGENT: WAF blocked SQL injection attempt against checkout-web from 10.215.184.148, rule SEC-4011"
+INC101247,storage,0,"Backup to 10.107.132.56 failed because /data has no space left, XFS-117 Started after last deploy."
+INC101248,security,3,"Expired TLS certificate on billing-batch detected by scanner, IDS-2019 Please investigate."
+INC101249,storage,0,Customer reports: Disk usage on auth-05 reached 32 percent on /srv/nfs/shared Please investigate.
+INC101250,security,3,"[P1] Malware signature found on mq-17.dc1.internal, quarantine triggered with WAF-942100"
+INC101251,network,4,"[P2] High latency on link to 10.132.181.32, payments-api reports ETIMEDOUT"
+INC101252,storage,0,"i/o wait above 86 percent on lb-39, storage latency spiking happening intermittently."
+INC101253,database,4,Replication lag on stor-05 is 465 seconds for sessions Please investigate.
+INC101254,application,4,"Response time of orders-worker above 1675 ms, error rate rising with OOM-137"
+INC101255,network,4,"High latency on link to 10.242.134.38, billing-batch reports ETIMEDOUT Happening intermittently."
+INC101256,database,4,"slow queries on orders at mq-30.prod.local (10.80.189.80), average latency 1251 ms raised by on-call."
+INC101257,network,4,"[P2] Load balancer health checks failing for lb-03, NET-0042 from 10.112.103.116 Please investigate."
+INC101258,network,4,"Customer reports: High latency on link to 10.50.24.44, search-api reports NET-0042 Happening intermittently."
+INC101259,storage,0,"I/O wait above 42 percent on k8s-node-03, storage latency spiking Please investigate."
+INC101260,application,1,"Customer reports: checkout-web pods restarting in a loop on db-14.prod.local, exit code NPE-001 Happening intermittently."
+INC101261,network,4,URGENT: checkout-web timing out while talking to lb-16 (10.50.7.136) Happening intermittently.
+INC101262,security,3,"Monitoring alert - Malware signature found on web-34.prod.local, quarantine triggered with IDS-2019 Please investigate."
+INC101263,network,2,"BGP session flapping on edge router k8s-node-18.prod.local, peer 10.204.182.122 Please investigate."
+INC101264,application,4,"Customer reports: Response time of auth-service above 198 ms, error rate rising with HTTP-500"
+INC101265,security,3,"URGENT: Malware signature found on db-03, quarantine triggered with AUTH-401"
+INC101266,database,4,"URGENT: Slow queries on customers at auth-23 (10.137.93.243), average latency 1539 ms"
+INC101267,network,4,"DNS lookups from mq-37 timing out, upstream resolver 10.251.244.112 not answering Happening intermittently."
+INC101268,network,2,"Monitoring alert - BGP session flapping on edge router edge-40, peer 10.48.172.70 Please investigate."
+INC101269,network,4,"Load balancer health checks failing for cache-34, ECONNRESET from 10.108.233.122"
+INC101270,application,1,Feature flag change broke checkout flow in notification-svc on auth-22.dc1.internal Started after last deploy.
+INC101271,storage,0,"[P2] payments-api write failed on k8s-node-21 with ENOSPC, volume /var/log is read-only"
+INC101272,storage,0,"Customer reports: Backup to 10.4.125.36 failed because /var/lib/docker has no space left, EIO"
+INC101273,security,3,"[P2] User jsmith attempted privilege escalation on db-08.prod.local, AUTH-401 Please investigate."
+INC101274,database,1,Customer reports: inventory-svc timing out while talking to ledger on lb-38
+INC101275,network,4,"[P3] Load balancer health checks failing for lb-18, EHOSTUNREACH from 10.238.4.18"
+INC101276,security,3,"Monitoring alert - Malware signature found on stor-40, quarantine triggered with SEC-4011"
+INC101277,application,4,payments-api returning HTTP-500 to users after deploy on web-26.prod.local
+INC101278,database,4,"Customer reports: payments-api cannot acquire a connection from the pool, orders reports MYSQL-1205 Happening intermittently."
+INC101279,database,1,"urgent: deadlock detected on customers database on cache-16.prod.local, error ora-01555 raised by inventory-svc"
+INC101280,network,1,inventory-svc timing out while talking to db-37 (10.243.9.31) Happening intermittently.
+INC101281,security,3,"Monitoring alert - Expired TLS certificate on checkout-web detected by scanner, IDS-2019"
+INC101282,application,1,Feature flag change broke checkout flow in billing-batch on cache-13
+INC101283,database,1,"Customer reports: Deadlock detected on orders database on auth-11, error PG-40P01 raised by checkout-web"
+INC101284,application,1,"[P3] inventory-svc pods restarting in a loop on k8s-node-09.dc1.internal, exit code HTTP-500 Raised by on-call."
+INC101285,application,1,[P3] Feature flag change broke checkout flow in inventory-svc on mq-27.prod.local Started after last deploy.
+INC101286,network,4,"Customer reports: DNS lookups from stor-14 timing out, upstream resolver 10.250.1.32 not answering Please investigate."
+INC101287,network,2,"Customer reports: BGP session flapping on edge router app-14.prod.local, peer 10.27.135.194 Raised by on-call."
+INC101288,database,1,[p3] database sessions on auth-16.dc1.internal rejected new connections with ora-00060 started after last deploy.
+INC101289,application,1,[p2] feature flag change broke checkout flow in checkout-web on stor-15.dc1.internal started after last deploy.
+INC101290,security,3,"User jsmith attempted privilege escalation on k8s-node-16, SEC-4011 Started after last deploy."
+INC101291,database,4,"Slow queries on orders at app-18.dc1.internal (10.127.38.114), average latency 1365 ms Started after last deploy."
+INC101292,application,4,"Customer reports: search-api timing out for users, OOM-137 seen on stor-40"
+INC101293,storage,0,"Monitoring alert - I/O wait above 43 percent on stor-17, storage latency spiking Started after last deploy."
+INC101294,security,3,"[p2] expired tls certificate on notification-svc detected by scanner, auth-401 raised by on-call."
+INC101295,application,4,"[P1] auth-service timing out for users, NPE-001 seen on edge-19.prod.local Happening intermittently."
+INC101296,security,3,"User jsmith attempted privilege escalation on k8s-node-21, SEC-4011 Happening intermittently."
+INC101297,network,4,"URGENT: DNS lookups from mq-26 timing out, upstream resolver 10.56.66.138 not answering Please investigate."
+INC101298,security,3,Customer reports: Suspicious outbound traffic from db-08.prod.local to 10.255.215.67 flagged IDS-2019
+INC101299,security,3,"WAF blocked SQL injection attempt against auth-service from 10.82.8.163, rule WAF-942100"
+INC101300,storage,0,"Customer reports: Backup to 10.58.111.8 failed because /mnt/backups has no space left, EIO"
+INC101301,network,2,"[P2] BGP session flapping on edge router edge-18, peer 10.99.57.204 Please investigate."
+INC101302,network,4,"Load balancer health checks failing for k8s-node-09.prod.local, NET-0042 from 10.199.213.214 Raised by on-call."
+INC101303,application,4,"[P2] Response time of orders-worker above 1125 ms, error rate rising with OOM-137 Happening intermittently."
+INC101304,security,3,[P3] Suspicious outbound traffic from edge-32 to 10.113.99.32 flagged IDS-2019
+INC101305,storage,0,disk usage on lb-15 reached 51 percent on /srv/nfs/shared please investigate.
+INC101306,security,3,"User svc_backup attempted privilege escalation on auth-32.dc1.internal, AUTH-401 Please investigate."
+INC101307,storage,0,"RAID array degraded on lb-25.prod.local, one disk reporting NFS-STALE Started after last deploy."
+INC101308,network,2,"[p1] bgp session flapping on edge router cache-35.dc1.internal, peer 10.243.80.130 please investigate."
+INC101309,application,1,Memory usage of billing-batch on edge-10.dc1.internal keeps growing until it is killed with OOM-137 Started after last deploy.
+INC101310,storage,0,"I/O wait above 38 percent on stor-15, storage latency spiking Happening intermittently."
+INC101311,storage,0,[P1] Disk usage on edge-14 reached 90 percent on /data Please investigate.
+INC101312,storage,0,"[P1] RAID array degraded on app-24.prod.local, one disk reporting NFS-STALE Started after last deploy."
+INC101313,storage,0,"[P1] RAID array degraded on mq-01.dc1.internal, one disk reporting NFS-STALE Please investigate."
+INC101314,application,1,Memory usage of notification-svc on edge-26.prod.local keeps growing until it is killed with HTTP-500 Please investigate.
+INC101315,application,1,[P3] Feature flag change broke checkout flow in billing-batch on k8s-node-40
+INC101316,security,3,"[P3] Expired TLS certificate on checkout-web detected by scanner, WAF-942100 Raised by on-call."
+INC101317,application,1,"[P2] Unhandled exception in notification-svc, stack trace shows HTTP-503"
+INC101318,security,3,"Multiple failed SSH logins on app-19.prod.local from 10.178.111.27, alert SEC-4011"
+INC101319,database,1,"Monitoring alert - Transaction rollback storm in inventory, billing-batch logging ORA-00060 Happening intermittently."
+INC101320,application,1,"[P1] Response time of notification-svc above 892 ms, error rate rising with OOM-137 Started after last deploy."
+INC101321,security,3,"[P2] User jsmith attempted privilege escalation on app-03.prod.local, IDS-2019 Started after last deploy."
+INC101322,security,3,"URGENT: Expired TLS certificate on billing-batch detected by scanner, WAF-942100 Raised by on-call."
+INC101323,security,3,"Malware signature found on edge-40, quarantine triggered with AUTH-401"
+INC101324,database,4,"Slow queries on sessions at lb-05 (10.162.37.116), average latency 735 ms Started after last deploy."
+INC101325,application,1,Feature flag change broke checkout flow in auth-service on stor-02 Please investigate.
+INC101326,security,3,"[P2] WAF blocked SQL injection attempt against billing-batch from 10.29.89.237, rule AUTH-401 Happening intermittently."
+INC101327,storage,0,"[P3] Backup to 10.47.47.7 failed because /var/log has no space left, ENOSPC"
+INC101328,database,4,Replication lag on stor-17.prod.local is 508 seconds for customers
+INC101329,network,4,"[P3] High latency on link to 10.150.254.126, orders-worker reports EHOSTUNREACH"
+INC101330,storage,0,"I/O wait above 89 percent on cache-33, storage latency spiking Started after last deploy."
+INC101331,network,4,"Monitoring alert - Load balancer health checks failing for k8s-node-11.prod.local, ETIMEDOUT from 10.103.234.71 Please investigate."
+INC101332,storage,0,"customer reports: nfs mount /mnt/backups on app-18 is unresponsive, error xfs-117 please investigate."
+INC101333,database,4,"[P2] billing-batch cannot acquire a connection from the pool, sessions reports PG-53300"
+INC101334,network,4,"High latency on link to 10.93.48.101, payments-api reports ECONNRESET Raised by on-call."
+INC101335,application,4,Memory usage of billing-batch on cache-40.dc1.internal keeps growing until it is killed with HTTP-503
+INC101336,application,1,[P2] Feature flag change broke checkout flow in notification-svc on auth-09.prod.local Raised by on-call.
+INC101337,storage,0,"[P3] NFS mount /var/log on db-07 is unresponsive, error XFS-117"
+INC101338,storage,0,"Customer reports: RAID array degraded on stor-18.prod.local, one disk reporting NFS-STALE Raised by on-call."
+INC101339,security,3,"[p3] user adeleon attempted privilege escalation on app-13.prod.local, auth-401"
+INC101340,network,4,"High latency on link to 10.93.130.197, auth-service reports ECONNRESET"
+INC101341,network,2,"bgp session flapping on edge router web-05, peer 10.247.220.11 please investigate."
+INC101342,database,1,"URGENT: Transaction rollback storm in customers, orders-worker logging ORA-01555 Happening intermittently."
+INC101343,storage,0,"orders-worker write failed on edge-37.dc1.internal with eio, volume /srv/nfs/shared is read-only"
+INC101344,network,1,URGENT: inventory-svc timing out while talking to lb-37.prod.local (10.153.214.85) Raised by on-call.
+INC101345,network,4,[P3] billing-batch timing out while talking to web-21 (10.154.236.103)
+INC101346,database,4,checkout-web timing out while talking to customers on cache-35 Raised by on-call.
+INC101347,storage,0,"Monitoring alert - I/O wait above 60 percent on db-21, storage latency spiking"
+INC101348,database,4,Customer reports: search-api timing out while talking to ledger on stor-19 Raised by on-call.
+INC101349,application,3,auth-service returning OOM-137 to users after deploy on cache-39.dc1.internal Raised by on-call.
+INC101350,application,1,feature flag change broke checkout flow in inventory-svc on mq-27
+INC101351,application,1,Customer reports: Feature flag change broke checkout flow in search-api on app-20.prod.local
+INC101352,storage,0,"NFS mount /var/lib/docker on auth-13.prod.local is unresponsive, error ENOSPC Raised by on-call."
+INC101353,database,4,Customer reports: Replication lag on k8s-node-02.prod.local is 1840 seconds for orders Happening intermittently.
+INC101354,security,3,"[P3] Malware signature found on db-38.prod.local, quarantine triggered with AUTH-401 Raised by on-call."
+INC101355,storage,0,"Customer reports: I/O wait above 72 percent on auth-01, storage latency spiking"
+INC101356,database,4,auth-service timing out while talking to customers on lb-11.prod.local
+INC101357,application,4,URGENT: checkout-web returning HTTP-503 to users after deploy on auth-36.dc1.internal Raised by on-call.
+INC101358,security,3,Suspicious outbound traffic from stor-13.prod.local to 10.42.95.64 flagged SEC-4011
+INC101359,database,1,"[P3] Transaction rollback storm in sessions, auth-service logging PG-53300 Please investigate."
+INC101360,security,3,"Customer reports: User mkhan attempted privilege escalation on auth-38, AUTH-401 Started after last deploy."
+INC101361,network,4,"[P1] High latency on link to 10.47.20.132, search-api reports NET-0042 Started after last deploy."
+INC101362,application,3,"Unhandled exception in auth-service, stack trace shows HTTP-500"
+INC101363,database,1,"Customer reports: Transaction rollback storm in orders, billing-batch logging ORA-01555 Raised by on-call."
+INC101364,database,4,Monitoring alert - Replication lag on k8s-node-01.prod.local is 1277 seconds for customers Happening intermittently.
+INC101365,network,4,[P2] Packet loss of 66 percent between stor-28.prod.local and 10.106.41.159 Started after last deploy.
+INC101366,storage,0,"i/o wait above 79 percent on db-20.prod.local, storage latency spiking raised by on-call."
+INC101367,database,4,[P1] search-api timing out while talking to sessions on k8s-node-16 Please investigate.
+INC101368,database,1,"URGENT: inventory-svc cannot acquire a connection from the pool, sessions reports MYSQL-1205"
+INC101369,security,3,"Expired TLS certificate on billing-batch detected by scanner, WAF-942100"
+INC101370,application,4,"Monitoring alert - auth-service timing out for users, OOM-137 seen on lb-02"
+INC101371,storage,0,"RAID array degraded on auth-31, one disk reporting ENOSPC"
+INC101372,database,4,"Slow queries on ledger at web-09 (10.80.208.168), average latency 1362 ms"
+INC101373,storage,0,"[P2] NFS mount /var/log on app-02.prod.local is unresponsive, error XFS-117"
+INC101374,network,1,notification-svc on db-37 fails to reach 10.143.69.29 with NET-0042 Raised by on-call.
+INC101375,database,1,"[P1] Transaction rollback storm in inventory, payments-api logging ORA-00060"
+INC101376,database,1,"[P1] Transaction rollback storm in orders, notification-svc logging PG-53300 Please investigate."
+INC101377,security,3,"Monitoring alert - Malware signature found on k8s-node-33.dc1.internal, quarantine triggered with AUTH-401 Please investigate."
+INC101378,storage,0,"Customer reports: RAID array degraded on app-35, one disk reporting XFS-117"
+INC101379,network,2,"[P2] BGP session flapping on edge router auth-01, peer 10.141.61.102"
+INC101380,security,3,URGENT: Suspicious outbound traffic from mq-29 to 10.245.9.168 flagged IDS-2019 Started after last deploy.
+INC101381,application,1,orders-worker returning HTTP-503 to users after deploy on db-25 Raised by on-call.
+INC101382,storage,0,"[P2] payments-api write failed on app-28 with NFS-STALE, volume /data is read-only Started after last deploy."
+INC101383,database,4,"Slow queries on sessions at stor-03 (10.170.66.164), average latency 1548 ms"
+INC101384,application,4,"URGENT: Unhandled exception in billing-batch, stack trace shows HTTP-500 Happening intermittently."
+INC101385,database,1,"inventory-svc cannot acquire a connection from the pool, sessions reports ORA-00060"
+INC101386,storage,0,"[P3] RAID array degraded on lb-07, one disk reporting XFS-117 Started after last deploy."
+INC101387,application,1,"Customer reports: inventory-svc timing out for users, OOM-137 seen on app-14 Please investigate."
+INC101388,storage,0,"orders-worker write failed on cache-07 with EIO, volume /data is read-only Happening intermittently."
+INC101389,database,4,[P1] orders-worker timing out while talking to inventory on auth-27.prod.local Raised by on-call.
+INC101390,storage,0,"[p1] raid array degraded on lb-25.dc1.internal, one disk reporting eio started after last deploy."
+INC101391,database,1,[p3] inventory-svc timing out while talking to customers on k8s-node-21 happening intermittently.
+INC101392,storage,0,"[P2] NFS mount /var/lib/docker on cache-29 is unresponsive, error XFS-117 Happening intermittently."
+INC101393,network,4,"[P2] High latency on link to 10.10.82.74, checkout-web reports NET-0042 Happening intermittently."
+INC101394,database,1,"[P3] Deadlock detected on customers database on mq-03.dc1.internal, error MYSQL-1205 raised by notification-svc Please investigate."
+INC101395,storage,0,"[P2] Backup to 10.39.117.36 failed because /var/lib/docker has no space left, EIO Started after last deploy."
+INC101396,storage,0,"I/O wait above 38 percent on stor-22.dc1.internal, storage latency spiking"
+INC101397,storage,0,"Backup to 10.220.242.55 failed because /mnt/backups has no space left, EIO"
+INC101398,database,4,Replication lag on k8s-node-24.prod.local is 781 seconds for ledger
+INC101399,application,1,"[P1] Unhandled exception in orders-worker, stack trace shows HTTP-503"
+INC101400,security,3,"URGENT: Multiple failed SSH logins on lb-29 from 10.31.88.30, alert SEC-4011 Please investigate."
+INC101401,application,1,[P1] Feature flag change broke checkout flow in checkout-web on lb-08
+INC101402,database,4,"[P3] Slow queries on customers at app-27 (10.130.100.49), average latency 471 ms"
+INC101403,network,4,monitoring alert - packet loss of 56 percent between web-17 and 10.43.199.80
+INC101404,security,3,"[p3] multiple failed ssh logins on lb-06 from 10.114.234.94, alert sec-4011 raised by on-call."
+INC101405,security,3,"Monitoring alert - Multiple failed SSH logins on stor-33.prod.local from 10.235.92.99, alert AUTH-401 Started after last deploy."
+INC101406,security,3,"URGENT: Malware signature found on stor-39, quarantine triggered with WAF-942100"
+INC101407,network,2,"Monitoring alert - BGP session flapping on edge router lb-32.prod.local, peer 10.234.126.110"
+INC101408,network,4,"Monitoring alert - DNS lookups from db-24 timing out, upstream resolver 10.36.6.239 not answering Raised by on-call."
+INC101409,storage,0,"payments-api write failed on mq-03.dc1.internal with XFS-117, volume /var/lib/docker is read-only Started after last deploy."
+INC101410,storage,0,Disk usage on auth-28.dc1.internal reached 55 percent on /var/log Please investigate.
+INC101411,storage,0,"Backup to 10.108.77.102 failed because /mnt/backups has no space left, XFS-117 Raised by on-call."
+INC101412,network,2,"BGP session flapping on edge router k8s-node-23.dc1.internal, peer 10.200.36.136 Please investigate."
+INC101413,network,4,"High latency on link to 10.83.70.114, notification-svc reports EHOSTUNREACH Please investigate."
+INC101414,network,4,Customer reports: Packet loss of 83 percent between cache-09.dc1.internal and 10.184.147.143 Happening intermittently.
+INC101415,application,4,"[P3] Response time of search-api above 1121 ms, error rate rising with HTTP-503"
+INC101416,storage,0,Disk usage on web-36.dc1.internal reached 68 percent on /data Please investigate.
+INC101417,security,1,"Monitoring alert - WAF blocked SQL injection attempt against inventory-svc from 10.77.48.244, rule SEC-4011"
+INC101418,storage,0,"URGENT: I/O wait above 58 percent on web-05.prod.local, storage latency spiking Happening intermittently."
+INC101419,storage,0,"Customer reports: RAID array degraded on k8s-node-16.dc1.internal, one disk reporting ENOSPC Raised by on-call."
+INC101420,security,3,"multiple failed ssh logins on app-38 from 10.61.14.68, alert waf-942100 happening intermittently."
+INC101421,application,4,"Monitoring alert - Response time of auth-service above 361 ms, error rate rising with NPE-001"
+INC101422,security,3,"[p3] malware signature found on mq-09, quarantine triggered with waf-942100 started after last deploy."
+INC101423,application,4,"Monitoring alert - auth-service timing out for users, HTTP-500 seen on k8s-node-24 Happening intermittently."
+INC101424,security,3,"Malware signature found on mq-26.prod.local, quarantine triggered with IDS-2019 Happening intermittently."
+INC101425,database,1,[P3] Database inventory on web-09 rejected new connections with PG-53300
+INC101426,application,1,Memory usage of checkout-web on lb-16.dc1.internal keeps growing until it is killed with OOM-137 Started after last deploy.
+INC101427,database,4,Replication lag on app-07.dc1.internal is 844 seconds for ledger Started after last deploy.
+INC101428,database,4,[p1] replication lag on stor-06 is 1090 seconds for sessions raised by on-call.
+INC101429,application,1,"Monitoring alert - Unhandled exception in checkout-web, stack trace shows OOM-137 Happening intermittently."
+INC101430,network,4,[P3] Packet loss of 84 percent between db-22 and 10.241.181.156 Raised by on-call.
+INC101431,storage,1,"[P3] notification-svc write failed on cache-07 with EIO, volume /var/log is read-only"
+INC101432,network,1,inventory-svc timing out while talking to lb-12.dc1.internal (10.247.222.77) Started after last deploy.
+INC101433,security,3,"[P1] Multiple failed SSH logins on lb-11 from 10.84.95.198, alert WAF-942100 Please investigate."
+INC101434,network,4,checkout-web on mq-28.prod.local fails to reach 10.186.64.134 with ETIMEDOUT Please investigate.
+INC101435,security,3,"[P2] Malware signature found on app-34.dc1.internal, quarantine triggered with IDS-2019 Raised by on-call."
+INC101436,application,4,"[P3] Response time of auth-service above 53 ms, error rate rising with NPE-001"
+INC101437,network,4,"[p2] high latency on link to 10.63.106.248, auth-service reports econnreset"
+INC101438,storage,0,"URGENT: RAID array degraded on db-01, one disk reporting XFS-117 Happening intermittently."
+INC101439,security,3,"customer reports: expired tls certificate on billing-batch detected by scanner, waf-942100 started after last deploy."
+INC101440,database,4,Replication lag on cache-26 is 995 seconds for customers Happening intermittently.
+INC101441,security,3,"Expired TLS certificate on payments-api detected by scanner, AUTH-401"
+INC101442,security,3,"URGENT: User mkhan attempted privilege escalation on stor-20, AUTH-401 Please investigate."
+INC101443,network,1,[P2] notification-svc on cache-12.prod.local fails to reach 10.194.237.79 with EHOSTUNREACH
+INC101444,network,4,"[P3] DNS lookups from auth-11.dc1.internal timing out, upstream resolver 10.33.60.37 not answering Raised by on-call."
+INC101445,storage,0,"[P1] RAID array degraded on db-27, one disk reporting NFS-STALE"
+INC101446,security,3,"WAF blocked SQL injection attempt against notification-svc from 10.13.236.56, rule SEC-4011"
+INC101447,storage,0,"Monitoring alert - NFS mount /srv/nfs/shared on mq-39 is unresponsive, error NFS-STALE"
+INC101448,application,1,"Response time of notification-svc above 264 ms, error rate rising with HTTP-500 Happening intermittently."
+INC101449,storage,0,[P3] Disk usage on auth-10 reached 83 percent on /mnt/backups Please investigate.
+INC101450,application,1,Feature flag change broke checkout flow in search-api on edge-40 Raised by on-call.
+INC101451,database,4,[P1] Replication lag on auth-31.dc1.internal is 1159 seconds for customers
+INC101452,database,4,"[P1] Slow queries on orders at k8s-node-20.prod.local (10.28.180.130), average latency 975 ms"
+INC101453,storage,0,"[P3] Backup to 10.180.106.242 failed because /var/lib/docker has no space left, NFS-STALE Started after last deploy."
+INC101454,application,1,[P1] Memory usage of orders-worker on app-09.dc1.internal keeps growing until it is killed with OOM-137
+INC101455,security,3,"Malware signature found on cache-15.dc1.internal, quarantine triggered with WAF-942100 Happening intermittently."
+INC101456,database,4,"[P2] Slow queries on ledger at auth-17 (10.182.34.89), average latency 1610 ms Happening intermittently."
+INC101457,database,1,"[p3] notification-svc cannot acquire a connection from the pool, orders reports mysql-1205 happening intermittently."
+INC101458,storage,0,Monitoring alert - Disk usage on edge-38.prod.local reached 99 percent on /mnt/backups Please investigate.
+INC101459,network,4,URGENT: auth-service timing out while talking to mq-40.prod.local (10.171.138.69) Happening intermittently.
+INC101460,security,3,"URGENT: Malware signature found on lb-29, quarantine triggered with WAF-942100 Started after last deploy."
+INC101461,application,4,"[P3] Response time of checkout-web above 889 ms, error rate rising with NPE-001 Happening intermittently."
+INC101462,database,4,orders-worker timing out while talking to sessions on stor-18.dc1.internal
+INC101463,network,2,"BGP session flapping on edge router mq-07.dc1.internal, peer 10.129.181.66"
+INC101464,storage,0,"[P3] RAID array degraded on cache-37, one disk reporting XFS-117"
+INC101465,security,3,"[P1] User svc_backup attempted privilege escalation on app-28, WAF-942100 Raised by on-call."
+INC101466,security,3,"[p1] user adeleon attempted privilege escalation on mq-13, waf-942100 raised by on-call."
+INC101467,application,1,"Customer reports: notification-svc timing out for users, NPE-001 seen on lb-25 Happening intermittently."
+INC101468,application,4,"[P1] orders-worker timing out for users, HTTP-500 seen on web-33 Please investigate."
+INC101469,storage,0,"URGENT: NFS mount /mnt/backups on cache-08 is unresponsive, error NFS-STALE"
+INC101470,application,1,URGENT: Feature flag change broke checkout flow in orders-worker on mq-01.prod.local
+INC101471,network,4,"Monitoring alert - DNS lookups from cache-28.prod.local timing out, upstream resolver 10.27.32.96 not answering Raised by on-call."
+INC101472,security,3,"WAF blocked SQL injection attempt against checkout-web from 10.66.233.187, rule AUTH-401"
+INC101473,network,4,Monitoring alert - search-api on cache-16 fails to reach 10.212.54.197 with NET-0042 Started after last deploy.
+INC101474,storage,0,"Backup to 10.126.104.27 failed because /var/lib/docker has no space left, ENOSPC Please investigate."
+INC101475,network,1,[P3] inventory-svc timing out while talking to cache-20.prod.local (10.11.16.237)
+INC101476,security,3,"Multiple failed SSH logins on stor-26.dc1.internal from 10.141.53.212, alert SEC-4011 Raised by on-call."
+INC101477,database,1,"Monitoring alert - Deadlock detected on sessions database on mq-32, error ORA-00060 raised by orders-worker Started after last deploy."
+INC101478,database,1,Monitoring alert - Database inventory on web-34.prod.local rejected new connections with MYSQL-1205
+INC101479,storage,0,Monitoring alert - Disk usage on stor-18.dc1.internal reached 74 percent on /data Please investigate.
+INC101480,database,4,"Slow queries on orders at edge-15.prod.local (10.211.180.133), average latency 538 ms Happening intermittently."
+INC101481,database,4,search-api timing out while talking to orders on mq-25 Raised by on-call.
+INC101482,security,3,Customer reports: Suspicious outbound traffic from auth-34 to 10.113.0.143 flagged SEC-4011 Please investigate.
+INC101483,network,1,notification-svc on web-14.prod.local fails to reach 10.80.149.182 with NET-0042
+INC101484,database,4,"payments-api cannot acquire a connection from the pool, ledger reports ORA-00060 Happening intermittently."
+INC101485,network,4,URGENT: Packet loss of 52 percent between auth-23.prod.local and 10.154.120.251
+INC101486,database,4,"checkout-web cannot acquire a connection from the pool, orders reports PG-40P01 Happening intermittently."
+INC101487,security,3,"User adeleon attempted privilege escalation on app-33.prod.local, SEC-4011"
+INC101488,database,4,Customer reports: checkout-web timing out while talking to sessions on web-40.dc1.internal
+INC101489,security,3,"Malware signature found on lb-07, quarantine triggered with WAF-942100"
+INC101490,network,1,notification-svc timing out while talking to auth-11.prod.local (10.186.223.52) Please investigate.
+INC101491,database,1,"URGENT: Transaction rollback storm in orders, inventory-svc logging ORA-00060 Raised by on-call."
+INC101492,database,4,"checkout-web cannot acquire a connection from the pool, customers reports PG-40P01 Raised by on-call."
+INC101493,security,3,"[p2] user svc_backup attempted privilege escalation on stor-03, auth-401"
+INC101494,application,1,"URGENT: search-api pods restarting in a loop on k8s-node-08, exit code OOM-137"
+INC101495,security,3,Suspicious outbound traffic from mq-26.prod.local to 10.130.75.243 flagged IDS-2019
+INC101496,database,1,"Deadlock detected on customers database on lb-35, error ORA-01555 raised by notification-svc"
+INC101497,network,4,Monitoring alert - auth-service on k8s-node-27 fails to reach 10.188.39.194 with EHOSTUNREACH
+INC101498,storage,0,Disk usage on edge-01.dc1.internal reached 48 percent on /srv/nfs/shared Raised by on-call.
+INC101499,security,3,"Customer reports: Expired TLS certificate on payments-api detected by scanner, SEC-4011 Started after last deploy."
