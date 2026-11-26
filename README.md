@@ -13,5 +13,6 @@ Professional-level hands-on labs completed in the AIOps Additional Assessment La
 | AIOps | [Deep Learning, Open Source Perspective: PyTorch to ONNX to MLflow to container](aiops/deep-learning-open-source-perspective) | Done |
 | AIOps | [Docker Deep Dive II: hardened multi-stage build, Compose stack, registry, Trivy, AIOps monitor](aiops/docker-deep-dive-ii) | Done |
 | AIOps | [Kubernetes Administrator II: RBAC, quotas, storage, network policies, drain, etcd restore, break-fix](aiops/kubernetes-administrator-ii) | Done |
+| AIOps | [ML Model Development and Deployment II: MLflow tracking and registry, FastAPI, kind rollouts, drift detection, gated promotion](aiops/ml-model-development-deployment-ii) | Done |
 | DevOps | Docker, Ansible, Kubernetes | Coming soon |
 | SysOps | RHEL, cloud security | Coming soon |
