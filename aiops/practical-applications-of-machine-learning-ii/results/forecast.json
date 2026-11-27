@@ -1,0 +1,41 @@
+{
+  "naive": {
+    "mae": 29.06,
+    "mape": 4.68
+  },
+  "gbm": {
+    "mae": 4.13,
+    "mape": 0.81
+  },
+  "p95_coverage": 0.865,
+  "capacity_plan": [
+    {
+      "date": "2024-03-11",
+      "naive_mae": 103.68,
+      "gbm_mae": 3.3,
+      "peak_p95": 801.66,
+      "replicas": 4
+    },
+    {
+      "date": "2024-03-12",
+      "naive_mae": 2.97,
+      "gbm_mae": 5.09,
+      "peak_p95": 801.67,
+      "replicas": 4
+    },
+    {
+      "date": "2024-03-13",
+      "naive_mae": 4.51,
+      "gbm_mae": 4.52,
+      "peak_p95": 801.63,
+      "replicas": 4
+    },
+    {
+      "date": "2024-03-14",
+      "naive_mae": 5.07,
+      "gbm_mae": 3.63,
+      "peak_p95": 801.29,
+      "replicas": 4
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "decision": "promoted",
+  "data": "data/metrics_v2.csv",
+  "champion_before": {
+    "precision": 0.253,
+    "recall": 0.899,
+    "f1": 0.3949,
+    "event_recall": 1.0,
+    "incidents": 8,
+    "false_alerts_per_day": 108.0,
+    "alias": "champion",
+    "version": "1",
+    "candidate": "iforest_n200_s1024",
+    "threshold": 0.4866,
+    "alert_rate": 0.1283
+  },
+  "challenger": {
+    "precision": 0.5897,
+    "recall": 0.6635,
+    "f1": 0.6244,
+    "event_recall": 1.0,
+    "incidents": 8,
+    "false_alerts_per_day": 22.5,
+    "alias": "challenger",
+    "version": "2",
+    "candidate": "iforest_n100_s1024",
+    "threshold": 0.4822,
+    "alert_rate": 0.0406
+  }
+}

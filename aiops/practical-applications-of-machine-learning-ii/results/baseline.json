@@ -1,0 +1,47 @@
+[
+  {
+    "precision": 0.2515,
+    "recall": 0.741,
+    "f1": 0.3756,
+    "event_recall": 1.0,
+    "incidents": 8,
+    "false_alerts_per_day": 82.75,
+    "threshold": 3.0
+  },
+  {
+    "precision": 0.4192,
+    "recall": 0.7349,
+    "f1": 0.5339,
+    "event_recall": 1.0,
+    "incidents": 8,
+    "false_alerts_per_day": 41.0,
+    "threshold": 3.5
+  },
+  {
+    "precision": 0.6103,
+    "recall": 0.7169,
+    "f1": 0.6593,
+    "event_recall": 1.0,
+    "incidents": 8,
+    "false_alerts_per_day": 18.75,
+    "threshold": 4.0
+  },
+  {
+    "precision": 0.8613,
+    "recall": 0.7108,
+    "f1": 0.7789,
+    "event_recall": 1.0,
+    "incidents": 8,
+    "false_alerts_per_day": 4.75,
+    "threshold": 5.0
+  },
+  {
+    "precision": 0.958,
+    "recall": 0.6867,
+    "f1": 0.8,
+    "event_recall": 1.0,
+    "incidents": 8,
+    "false_alerts_per_day": 1.25,
+    "threshold": 6.0
+  }
+]

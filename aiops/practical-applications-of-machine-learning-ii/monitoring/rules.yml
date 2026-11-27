@@ -1,0 +1,21 @@
+groups:
+  - name: aiops-model
+    rules:
+      - record: aiops:anomaly_rate:2m
+        expr: >
+          sum(rate(anomaly_predictions_total{result="anomaly"}[2m]))
+          / clamp_min(sum(rate(anomaly_predictions_total[2m])), 1e-9)
+      - alert: ModelAnomalyRateHigh
+        expr: aiops:anomaly_rate:2m > 0.15
+        for: 30s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Anomaly rate {{ $value | humanizePercentage }}: real incident or input drift"
+      - alert: ModelNotLoaded
+        expr: anomaly_model_loaded == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Scoring service is running without a model"

@@ -1,0 +1,50 @@
+{
+  "drift_detected": true,
+  "metrics": [
+    {
+      "metric": "requests",
+      "ref_mean": 520.0,
+      "cur_mean": 624.44,
+      "psi": 1.1411,
+      "ks_stat": 0.2233,
+      "ks_p": 1.2985524923416722e-98,
+      "status": "significant"
+    },
+    {
+      "metric": "cpu_pct",
+      "ref_mean": 51.52,
+      "cur_mean": 58.73,
+      "psi": 0.4255,
+      "ks_stat": 0.1746,
+      "ks_p": 3.4054844616902224e-60,
+      "status": "significant"
+    },
+    {
+      "metric": "mem_pct",
+      "ref_mean": 45.55,
+      "cur_mean": 45.74,
+      "psi": 0.0071,
+      "ks_stat": 0.0193,
+      "ks_p": 0.36691948775029726,
+      "status": "none"
+    },
+    {
+      "metric": "latency_ms",
+      "ref_mean": 113.72,
+      "cur_mean": 163.66,
+      "psi": 8.2566,
+      "ks_stat": 0.9904,
+      "ks_p": 0.0,
+      "status": "significant"
+    },
+    {
+      "metric": "error_rate_pct",
+      "ref_mean": 0.68,
+      "cur_mean": 0.67,
+      "psi": 0.0007,
+      "ks_stat": 0.0123,
+      "ks_p": 0.88554074594874,
+      "status": "none"
+    }
+  ]
+}

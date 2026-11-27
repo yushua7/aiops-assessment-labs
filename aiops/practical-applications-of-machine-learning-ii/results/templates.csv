@@ -1,0 +1,9 @@
+cluster_id,size,template
+4,35708,INFO GET /api/orders/<NUM> status=<NUM> duration=<NUM>ms
+3,13045,INFO User <NUM> logged in from <NUM>
+2,9679,INFO Cache hit ratio <NUM>
+1,6408,DEBUG DB query completed in <NUM>ms rows=<NUM>
+5,533,WARN Retry <NUM>/<NUM> for request <NUM>
+8,426,ERROR Timeout after <NUM>ms calling payment-svc
+6,400,ERROR OutOfMemoryError in worker-<NUM>
+7,385,ERROR Connection refused to db-<NUM>:<NUM>
