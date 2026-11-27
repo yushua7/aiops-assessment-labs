@@ -1,0 +1,13 @@
+collectors:
+  containerEngine:
+    enabled: true
+    engines:
+      docker:
+        enabled: false
+      podman:
+        enabled: false
+      cri:
+        enabled: false
+      containerd:
+        enabled: true
+        sockets: ["/run/k3s/containerd/containerd.sock"]

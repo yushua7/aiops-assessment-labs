@@ -1,0 +1,19 @@
+customRules:
+  aiops-rules.yaml: |-
+    - list: shop_api_allowed_secret_readers
+      items: [python, python3, python3.12, python3.13, vault]
+
+    - rule: Shop API Vault Secret Read by Unexpected Process
+      desc: >
+        A process other than the application interpreter or vault-agent
+        opened a Vault-rendered secret file.
+      condition: >
+        open_read and container
+        and fd.name startswith /vault/secrets/
+        and not proc.name in (shop_api_allowed_secret_readers)
+      output: >
+        Vault secret read by unexpected process (user=%user.name uid=%user.uid
+        proc=%proc.name cmdline=%proc.cmdline file=%fd.name
+        container=%container.name image=%container.image.repository)
+      priority: WARNING
+      tags: [aiops, secrets, mitre_credential_access, T1552]

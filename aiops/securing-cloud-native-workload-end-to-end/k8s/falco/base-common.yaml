@@ -1,0 +1,10 @@
+driver:
+  kind: modern_ebpf
+tty: true
+falco:
+  json_output: true
+  json_include_output_property: true
+  priority: notice
+resources:
+  requests: { cpu: 100m, memory: 256Mi }
+  limits: { cpu: 1000m, memory: 768Mi }

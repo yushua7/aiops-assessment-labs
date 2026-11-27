@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata: { name: v-gk, namespace: shop }
+spec:
+  containers:
+  - name: v-gk
+    image: nginx:1.27
+    resources: { limits: { cpu: 100m, memory: 64Mi } }

@@ -1,0 +1,32 @@
+== Task 1: cluster and CNI
+PASS  node Ready
+PASS  Calico or NetworkPolicy capable
+PASS  kube-bench baseline saved
+== Task 2: IAM as code
+PASS  Checkov IAM/S3 checks pass
+PASS  policy has no s3:*
+PASS  bucket public access blocked
+== Task 3: supply chain
+PASS  image gate (Trivy)
+PASS  manifest gate (Trivy)
+== Task 4: RBAC and Gatekeeper
+PASS  ci-deployer cannot read secrets
+PASS  ci-deployer can deploy
+PASS  Gatekeeper denies nginx
+== Task 5: Kyverno and NetworkPolicy
+PASS  Kyverno denies no-limits workload
+PASS  default-deny generated
+== Task 6: Vault, TLS, flows
+PASS  shop-api ready
+PASS  certificate Ready
+PASS  allowed client gets secret flag
+PASS  denied client blocked
+PASS  no DB secret in k8s Secrets
+== Task 7: Falco
+PASS  Falco running
+FAIL  custom rule fired
+== Task 8: ML triage
+PASS  triage report exists
+PASS  attacks in top 5
+
+Result: 21 passed, 1 failed
